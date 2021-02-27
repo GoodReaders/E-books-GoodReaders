@@ -42,37 +42,35 @@ MIT License is used in this project. [License](LICENSE)
 ### A typical top-level directory layout
 
 ```
-.
 ├── index.html             	 			# home page
-├── main-styles.css         				# link to all styles
+├── main-styles.css         			# link to all styles
 ├── app.js                				# global js file
 ├── books.json             	 			# contains embeded all books data
 └── pages                  				# contains all html pages
     	└── Browse.html
     	└── MyBooks.html
     	└── AboutUs.html
-└── css 					        # contains all css styling
-	└── reset.css
-	└── home.css
-	└── Browse.css
-  	└── MyBooks.css
-  	└── AboutUs.css
-└── js						         # contains all js files
-	└── Browse.js
-	└── MyBooks.js
-	└── AboutUs.js
-└── images                				 #contains all images
-	└── CS 
-	└── Science
-	└── History
-  	└── Novels
-  	└── Short Stories
-  	└── CookBooks
-	└── Classic
-	└── Self-help
-  	└── Poetry
-  	└── Fitness
-    
+└── css 					                # contains all css styling
+	    └── reset.css
+	    └── home.css
+	    └── Browse.css
+  	  └── MyBooks.css
+  	  └── AboutUs.css
+└── js						                # contains all js files
+	    └── Browse.js
+	    └── MyBooks.js
+	    └── AboutUs.js
+└── images                				#contains all images
+	    └── CS 
+	    └── Science
+	    └── History
+  	  └── Novels
+  	  └── Short Stories
+  	  └── CookBooks
+	    └── Classic
+	    └── Self-help
+  	  └── Poetry
+  	  └── Fitness
 ```
 
 ### Table of content
