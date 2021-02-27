@@ -1,7 +1,11 @@
 # E-books-GoodReaders
+
+
+## Synopsis 
+
 A website for E-books , that will contain many books of different categories, filter that books and adds them to a library of favorite books to read later. 
 
-## Team members
+## Contributors 
 
 - Momen Wahbeh
 - Muhammad Zareer 
@@ -23,43 +27,71 @@ A website for E-books , that will contain many books of different categories, fi
 * Visual Studio Code.
 * Github.
 
-### Instualtion
+## Installation 
 
-A Google chrome needs to open this project.
+An updated version of any Browser connected to an internet connection only needs to open this project.
 
-### License
+## License
 
-MIT License is used in this project.
-
-### Contents
+MIT License is used in this project. [License](LICENSE)
 
 
-1- HTML folder.
+## Contents
 
-* Home.html
+  
+### A typical top-level directory layout
 
-* MyBooks.html
+```
+.
+├── index.html              # home page
+├── main-styles.css         # link to all styles
+├── app.js                	# global js file
+├── books.json              # contains embeded all books data
+└── pages                  	# contains all html pages
+    └── Browse.html
+    └── MyBooks.html
+    └── AboutUs.html
+└── css 					          # contains all css styling
+	└── reset.css
+	└── home.css
+	└── Browse.css
+  └── MyBooks.css
+  └── AboutUs.css
+└── js						          # contains all js files
+	└── Browse.js
+	└── MyBooks.js
+	└── AboutUs.js
+└── images                 #contains all images
+	└── CS 
+	└── Science
+	└── History
+  └── Novels
+  └── Short Stories
+  └── CookBooks
+	└── Classic
+	└── Self-help
+  └── Poetry
+  └── Fitness
+    
+```
 
-* Browse.html
+### Table of content
 
-2- css folder.
+file/fodler | desciption | Link
+--- | --- | ---
+index.html | Home page | [Home page](index.html)
+styles-main.css | links to all css files | [main styles](styles-main.css)
+app.js | global js file | [app.js](app.js)
+books.json | contains books data | [Books.json](Books.json)
+pages | contains all html files | [html pages](./pages) 
+css | contains all styling files | [css](./css)
+js | contains all js files | [js](./js)
+images | contains all images | [images](./images)
 
-* reset.css
+## Code Examples 
 
-* Home.css
+## Motivation
 
-* MyBooks.css
+## API References
 
-* Browse.css
-
-
-3- js folder.
-
-* Home.js
-
-* MyBooks.js
-
-* Browse.js
-
-
-4- img folder.
+## Tests
