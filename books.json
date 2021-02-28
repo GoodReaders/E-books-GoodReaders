@@ -1,184 +1,380 @@
 {
-    "books":[
-       {
-          "self-help":{
-             "name":"The 7 Habits of Highly Effective People",
-             "category":"Self-help",
-             "auther":"Stephen R. Covey",
-             "price":"20.54$",
-             "published-date":"1/1/1994",
-             "img-url":"images/self-help/book-1.jpg",
-             "book-url":"pdf/self-help/book-1.pdf"
-          },
-          "name":"Rich Dad Poor Dad",
-          "category":"Self-help",
-          "auther":"Robert T. Kiyosaki",
-          "price":"11.62$",
-          "published-date":"11/4/2017",
-          "img-url":"images/self-help/book-2.jpg",
-          "book-url":"pdf/self-help/book-2.pdf"
-       },
-       {
-          "name":"Think and Grow Rich",
-          "category":"Self-help",
-          "auther":"Napoleon Hill",
-          "price":"11.62$",
-          "published-date":"1/1/1937",
-          "img-url":"images/self-help/book-3.jpg",
-          "book-url":"pdf/self-help/book-3.pdf"
-       },
-       {
-          "name":"How to Win Friends and Influence People",
-          "category":"Self-help",
-          "auther":"Dale Carnegie",
-          "price":" 14.60$",
-          "published-date":"1/10/1998",
-          "img-url":"images/self-help/book-4.jpg",
-          "book-url":"pdf/self-help/book-4.pdf"
-       },
-       {
-          "name":"Zero to One: Notes on Startups",
-          "category":"Self-help",
-          "auther":" Peter Thiel with Blake Masters",
-          "price":" 14.58$",
-          "published-date":"16/9/2014",
-          "img-url":"images/self-help/book-5.jpg",
-          "book-url":"pdf/self-help/book-5.pdf"
-       },
-       {
-          "name":"Feeling Good: The New Mood Therapy",
-          "category":"Self-help",
-          "auther":"David D. Burns",
-          "price":"12.34$",
-          "published-date":"30/12/2008",
-          "img-url":"images/self-help/book-6.jpg",
-          "book-url":"pdf/self-help/book-6.pdf"
-       },
-       {
-          "name":"Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time",
-          "category":"Self-help",
-          "auther":"David D. Burns",
-          "price":"12.34$",
-          "published-date":"30/12/2008",
-          "img-url":"images/self-help/book-7.jpg",
-          "book-url":"pdf/self-help/book-7.pdf"
-       },
-       {
-          "name":"The 5 AM Club",
-          "category":"Self-help",
-          "auther":"Robin Sharma",
-          "price":"11.55$",
-          "published-date":"4/12/2018",
-          "img-url":"images/self-help/book-8.jpg",
-          "book-url":"pdf/self-help/book-8.pdf"
-       },
-       {
-          "name":"The Miracle Morning",
-          "category":"Self-help",
-          "auther":"Hal Elrod",
-          "price":"18.09$",
-          "published-date":"7/12/2012",
-          "img-url":"images/self-help/book-9.jpg",
-          "book-url":"pdf/self-help/book-9.pdf"
-       },
-       {
-          "name":"You Are a Badass: How to Stop Doubting Your Greatness and Start Living an Awesome Life",
-          "category":"Self-help",
-          "auther":"Jen Sincero",
-          "price":"7.25$",
-          "published-date":"23/4/2013",
-          "img-url":"images/self-help/book-10.jpg",
-          "book-url":"pdf/self-help/book-10.pdf"
-       },
-       {
-          "cookbooks":{
-             "name":"Think and Grow Rich",
-             "category":"Cookbooks",
-             "auther":"Heviz's",
-             "price":"20.45$",
-             "published-date":" 4/2/2016",
-             "img-url":"images/cookbooks/book-1.jpg",
-             "book-url":"pdf/cookbooks/book-1.pdf"
-          },
-          "name":"The Cake Bible",
-          "category":"cookbooks",
-          "auther":"Valeriu Cotet",
-          "price":"25.65$",
-          "published-date":"7/12/2015",
-          "img-url":"images/cookbooks/book-2.jpg",
-          "book-url":"pdf/cookbooks/book-2.pdf"
-       },
-       {
-          "name":"The Flavor Bible",
-          "category":"cookbooks",
-          "auther":"Karen Page",
-          "price":"40.36$",
-          "published-date":"1/9/2008",
-          "img-url":"images/cookbooks/book-3.jpg",
-          "book-url":"pdf/cookbooks/book-3.pdf"
-       },
-       {
-          "name":"Good Housekeeping The Little Book of Baking",
-          "category":"cookbooks",
-          "auther":"Susan Westmoreland",
-          "price":"11.72$",
-          "published-date":"2/10/2012",
-          "img-url":"images/cookbooks/book-4.jpg",
-          "book-url":"pdf/cookbooks/book-4.pdf"
-       },
-       {
-          "name":"The Joy of Gluten-Free, Sugar-Free Baking",
-          "category":"cookbooks",
-          "auther":"Peter Reinhart",
-          "price":"24.47$",
-          "published-date":"14/8/2012",
-          "img-url":"images/cookbooks/book-5.jpg",
-          "book-url":"pdf/cookbooks/book-5.pdf"
-       },
-       {
-          "name":"Baking Sourdough Bread",
-          "category":"cookbooks",
-          "auther":"Göran Söderin",
-          "price":"11.99$",
-          "published-date":" 20/6/2017",
-          "img-url":"images/cookbooks/book-6.jpg",
-          "book-url":"pdf/cookbooks/book-6.pdf"
-       },
-       {
-          "name":"Keto Comfort Foods",
-          "category":"cookbooks",
-          "auther":"Maria Emmerich",
-          "price":"15.69$",
-          "published-date":"2/5/2017",
-          "img-url":"images/cookbooks/book-7.jpg",
-          "book-url":"pdf/cookbooks/book-7.pdf"
-       },
-       {
-          "name":"Healthy Indian Vegetarian Cooking",
-          "category":"cookbooks",
-          "auther":"Shubhra Ramineni ",
-          "price":"18.95$",
-          "published-date":"4/6/2013",
-          "img-url":"images/cookbooks/book-8.jpg",
-          "book-url":"pdf/cookbooks/book-8.pdf"
-       },
-       {
-          "name":"Fine Cooking Italian",
-          "category":"cookbooks",
-          "auther":"Editors of Fine Cooking",
-          "price":"12.48$",
-          "published-date":"17/6/2012",
-          "img-url":"images/cookbooks/book-9.jpg",
-          "book-url":"pdf/cookbooks/book-9.pdf"
-       },
-       {
-          "name":"Fine Cooking Comfort Food",
-          "category":"cookbooks",
-          "auther":"Editors of Fine Cooking",
-          "price":" 13.95$",
-          "published-date":"8/11/2011",
-          "img-url":"images/cookbooks/book-10.jpg",
-          "book-url":"pdf/cookbooks/book-10.pdf"
-       }
+    "books": [
+        {
+            "self-help": [
+                {
+                    "name": "The 7 Habits of Highly Effective People",
+                    "category": "Self-help",
+                    "author": "Stephen R. Covey",
+                    "price": "20.54$",
+                    "published-date": "1/1/1994",
+                    "img-url": "images/self-help/book-1.jpg",
+                    "book-url": "pdf/self-help/book-1.pdf"
+                },
+                {
+                    "name": "Rich Dad Poor Dad",
+                    "category": "Self-help",
+                    "author": "Robert T. Kiyosaki",
+                    "price": "11.62$",
+                    "published-date": "11/4/2017",
+                    "img-url": "images/self-help/book-2.jpg",
+                    "book-url": "pdf/self-help/book-2.pdf"
+                },
+                {
+                    "name": "Think and Grow Rich",
+                    "category": "Self-help",
+                    "author": "Napoleon Hill",
+                    "price": "11.62$",
+                    "published-date": "1/1/1937",
+                    "img-url": "images/self-help/book-3.jpg",
+                    "book-url": "pdf/self-help/book-3.pdf"
+                },
+                {
+                    "name": "How to Win Friends and Influence People",
+                    "category": "Self-help",
+                    "author": "Dale Carnegie",
+                    "price": "14.60$",
+                    "published-date": "1/10/1998",
+                    "img-url": "images/self-help/book-4.jpg",
+                    "book-url": "pdf/self-help/book-4.pdf"
+                },
+                {
+                    "name": "Zero to One: Notes on Startups",
+                    "category": "Self-help",
+                    "author": "Peter Thiel with Blake Masters",
+                    "price": "14.58$",
+                    "published-date": "16/9/2014",
+                    "img-url": "images/self-help/book-5.jpg",
+                    "book-url": "pdf/self-help/book-5.pdf"
+                },
+                {
+                    "name": "Feeling Good: The New Mood Therapy",
+                    "category": "Self-help",
+                    "author": "David D. Burns",
+                    "price": "12.34$",
+                    "published-date": "30/12/2008",
+                    "img-url": "images/self-help/book-6.jpg",
+                    "book-url": "pdf/self-help/book-6.pdf"
+                },
+                {
+                    "name": "Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time",
+                    "category": "Self-help",
+                    "author": "David D. Burns",
+                    "price": "12.34$",
+                    "published-date": "30/12/2008",
+                    "img-url": "images/self-help/book-7.jpg",
+                    "book-url": "pdf/self-help/book-7.pdf"
+                },
+                {
+                    "name": "The 5 AM Club",
+                    "category": "Self-help",
+                    "author": "Robin Sharma",
+                    "price": "11.55$",
+                    "published-date": "4/12/2018",
+                    "img-url": "images/self-help/book-8.jpg",
+                    "book-url": "pdf/self-help/book-8.pdf"
+                },
+                {
+                    "name": "The Miracle Morning",
+                    "category": "Self-help",
+                    "author": "Hal Elrod",
+                    "price": "18.09$",
+                    "published-date": "7/12/2012",
+                    "img-url": "images/self-help/book-9.jpg",
+                    "book-url": "pdf/self-help/book-9.pdf"
+                },
+                {
+                    "name": "You Are a Badass: How to Stop Doubting Your Greatness and Start Living an Awesome Life",
+                    "category": "Self-help",
+                    "author": "Jen Sincero",
+                    "price": "7.25$",
+                    "published-date": "23/4/2013",
+                    "img-url": "images/self-help/book-10.jpg",
+                    "book-url": "pdf/self-help/book-10.pdf"
+                }
+            ]
+        },
+        {
+            "cookbooks": [
+                {
+                    "name": "Think and Grow Rich",
+                    "category": "Cookbooks",
+                    "author": "Heviz's",
+                    "price": "20.45$",
+                    "published-date": " 4/2/2016",
+                    "img-url": "images/cookbooks/book-1.jpg",
+                    "book-url": "pdf/cookbooks/book-1.pdf"
+                },
+                {
+                    "name": "The Cake Bible",
+                    "category": "cookbooks",
+                    "author": "Valeriu Cotet",
+                    "price": "25.65$",
+                    "published-date": "7/12/2015",
+                    "img-url": "images/cookbooks/book-2.jpg",
+                    "book-url": "pdf/cookbooks/book-2.pdf"
+                },
+                {
+                    "name": "The Flavor Bible",
+                    "category": "cookbooks",
+                    "author": "Karen Page",
+                    "price": "40.36$",
+                    "published-date": "1/9/2008",
+                    "img-url": "images/cookbooks/book-3.jpg",
+                    "book-url": "pdf/cookbooks/book-3.pdf"
+                },
+                {
+                    "name": "Good Housekeeping The Little Book of Baking",
+                    "category": "cookbooks",
+                    "author": "Susan Westmoreland",
+                    "price": "11.72$",
+                    "published-date": "2/10/2012",
+                    "img-url": "images/cookbooks/book-4.jpg",
+                    "book-url": "pdf/cookbooks/book-4.pdf"
+                },
+                {
+                    "name": "The Joy of Gluten-Free, Sugar-Free Baking",
+                    "category": "cookbooks",
+                    "author": "Peter Reinhart",
+                    "price": "24.47$",
+                    "published-date": "14/8/2012",
+                    "img-url": "images/cookbooks/book-5.jpg",
+                    "book-url": "pdf/cookbooks/book-5.pdf"
+                },
+                {
+                    "name": "Baking Sourdough Bread",
+                    "category": "cookbooks",
+                    "author": "Göran Söderin",
+                    "price": "11.99$",
+                    "published-date": " 20/6/2017",
+                    "img-url": "images/cookbooks/book-6.jpg",
+                    "book-url": "pdf/cookbooks/book-6.pdf"
+                },
+                {
+                    "name": "Keto Comfort Foods",
+                    "category": "cookbooks",
+                    "author": "Maria Emmerich",
+                    "price": "15.69$",
+                    "published-date": "2/5/2017",
+                    "img-url": "images/cookbooks/book-7.jpg",
+                    "book-url": "pdf/cookbooks/book-7.pdf"
+                },
+                {
+                    "name": "Healthy Indian Vegetarian Cooking",
+                    "category": "cookbooks",
+                    "author": "Shubhra Ramineni ",
+                    "price": "18.95$",
+                    "published-date": "4/6/2013",
+                    "img-url": "images/cookbooks/book-8.jpg",
+                    "book-url": "pdf/cookbooks/book-8.pdf"
+                },
+                {
+                    "name": "Fine Cooking Italian",
+                    "category": "cookbooks",
+                    "author": "Editors of Fine Cooking",
+                    "price": "12.48$",
+                    "published-date": "17/6/2012",
+                    "img-url": "images/cookbooks/book-9.jpg",
+                    "book-url": "pdf/cookbooks/book-9.pdf"
+                },
+                {
+                    "name": "Fine Cooking Comfort Food",
+                    "category": "cookbooks",
+                    "author": "Editors of Fine Cooking",
+                    "price": "13.95$",
+                    "published-date": "8/11/2011",
+                    "img-url": "images/cookbooks/book-10.jpg",
+                    "book-url": "pdf/cookbooks/book-10.pdf"
+                }
+            ]
+        },
+        {
+            "science": [
+                {
+                    "name": "Earth",
+                    "category": "Science",
+                    "author": "Carlowicz, Michael",
+                    "price": "53.00$",
+                    "published-date": "20/2/2019",
+                    "img-url": "images/science/book-1.jpg",
+                    "book-url": "pdf/science/book-1.pdf"
+                },
+                {
+                    "name": "Physics Essentials For Dummies",
+                    "category": "Science",
+                    "author": "Steven Holzner",
+                    "price": "9.49$",
+                    "published-date": "16/3/2010",
+                    "img-url": "images/science/book-2.jpg",
+                    "book-url": "pdf/science/book-2.pdf"
+                },
+                {
+                    "name": "Climate Change and Migration",
+                    "category": "Science",
+                    "author": "Quentin Wodon",
+                    "price": "5.25$",
+                    "published-date": "6/6/2014",
+                    "img-url": "images/science/book-3.jpg",
+                    "book-url": "pdf/science/book-3.pdf"
+                },
+                {
+                    "name": "Basic Engineering Mathematics",
+                    "category": "Science",
+                    "author": "John Bird",
+                    "price": "35.50$",
+                    "published-date": "12/9/2013",
+                    "img-url": "images/science/book-4.jpg",
+                    "book-url": "pdf/science/book-4.pdf"
+                },
+                {
+                    "name": "Organic Chemistry For Dummies",
+                    "category": "Science",
+                    "author": "Arthur Winter",
+                    "price": "14.00$",
+                    "published-date": "5/6/2008",
+                    "img-url": "images/science/book-5.jpg",
+                    "book-url": "pdf/science/book-5.pdf"
+                },
+                {
+                    "name": "Space, Time and Einstein",
+                    "category": "Science",
+                    "author": "J. B. Kennedy",
+                    "price": "23.70$",
+                    "published-date": "18/12/2014",
+                    "img-url": "images/science/book-6.jpg",
+                    "book-url": "pdf/science/book-6.pdf"
+                },
+                {
+                    "name": "The Politics of the Environment",
+                    "category": "Science",
+                    "author": "Neil Carter",
+                    "price": "21.10$",
+                    "published-date": "24/7/2018",
+                    "img-url": "images/science/book-7.jpg",
+                    "book-url": "pdf/science/book-7.pdf"
+                },
+                {
+                    "name": "Essentials of Ecology",
+                    "category": "Science",
+                    "author": "Scott E. Spoolman",
+                    "price": "55.25$",
+                    "published-date": "20/9/2015",
+                    "img-url": "images/science/book-8.jpg",
+                    "book-url": "pdf/science/book-8.pdf"
+                },
+                {
+                    "name": "Cell Biology",
+                    "category": "Science",
+                    "author": "Robert M. Klein, George C. Enders,",
+                    "price": "60.00$",
+                    "published-date": "9/12/2007",
+                    "img-url": "images/science/book-9.jpg",
+                    "book-url": "pdf/science/book-9.pdf"
+                },
+                {
+                    "name": "Mathematical Physics",
+                    "category": "Science",
+                    "author": "Bruce R. Kusse and Erik A. Westwig",
+                    "price": "121.38$",
+                    "published-date": "10/3/2006",
+                    "img-url": "images/science/book-10.jpg",
+                    "book-url": "pdf/science/book-10.pdf"
+                }
+            ]
+        },
+        {
+            "Art": [
+                {
+                    "name": "Digital Colour in Graphic Design",
+                    "category": "Art",
+                    "author": "Ken Pender",
+                    "price": "7.25$",
+                    "published-date": "17/11/1998",
+                    "img-url": "images/Art/book-1.jpg",
+                    "book-url": "pdf/Art/book-1.pdf"
+                },
+                {
+                    "name": "Drawing Cartoons & Comics for Dummies",
+                    "category": "Art",
+                    "author": "Fairrington, Brian",
+                    "price": "13.00$",
+                    "published-date": "15/7/2009",
+                    "img-url": "images/Art/book-2.jpg",
+                    "book-url": "pdf/Art/book-2.pdf"
+                },
+                {
+                    "name": "Art of Drawing the Human Body",
+                    "category": "Art",
+                    "author": "Parramon",
+                    "price": "23.50$",
+                    "published-date": "23/6/2007",
+                    "img-url": "images/Art/book-3.jpg",
+                    "book-url": "pdf/Art/book-3.pdf"
+                },
+                {
+                    "name": "Interior Design & Interior Architecture",
+                    "category": "Art",
+                    "author": "John",
+                    "price": "35.00$",
+                    "published-date": "25/6/2007",
+                    "img-url": "images/Art/book-4.jpg",
+                    "book-url": "pdf/Art/book-4.pdf"
+                },
+                {
+                    "name": "Creative Photography Ideas",
+                    "category": "Art",
+                    "author": "Emanial",
+                    "price": "15.25$",
+                    "published-date": "20/8/2015",
+                    "img-url": "images/Art/book-5.jpg",
+                    "book-url": "pdf/Art/book-5.pdf"
+                },
+                {
+                    "name": "Food Styling for Photographers",
+                    "category": "Art",
+                    "author": "Linda Bellingham and Jean Ann Bybee",
+                    "price": "10.92$",
+                    "published-date": "21/11/2012",
+                    "img-url": "images/Art/book-6.jpg",
+                    "book-url": "pdf/Art/book-6.pdf"
+                },
+                {
+                    "name": "Mastering Photoshop for Web Design",
+                    "category": "Art",
+                    "author": "Sven Lennartz",
+                    "price": "25.00$",
+                    "published-date": "25/4/2011",
+                    "img-url": "images/Art/book-7.jpg",
+                    "book-url": "pdf/Art/book-7.pdf"
+                },
+                {
+                    "name": "The Green Beauty Guide",
+                    "category": "Art",
+                    "author": "Julie Gabriel",
+                    "price": "33.30$",
+                    "published-date": "16/9/2016",
+                    "img-url": "images/Art/book-8.jpg",
+                    "book-url": "pdf/Art/book-8.pdf"
+                },
+                {
+                    "name": "Pencil Drawing Techniques",
+                    "category": "Art",
+                    "author": "David Lewis",
+                    "price": "12.30$",
+                    "published-date": "30/5/1964",
+                    "img-url": "images/Art/book-9.jpg",
+                    "book-url": "pdf/Art/book-9.pdf"
+                },
+                {
+                    "name": "Decorative Knots",
+                    "category": "Art",
+                    "author": "Mario Begon",
+                    "price": "6.50$",
+                    "published-date": "30/9/1981",
+                    "img-url": "images/Art/book-10.jpg",
+                    "book-url": "pdf/Art/book-10.pdf"
+                }
+            ]
+        }
     ]
- }
+}
