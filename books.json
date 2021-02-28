@@ -55,7 +55,7 @@
           "book-url":"pdf/self-help/book-6.pdf"
        },
        {
-          "name":"Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time",
+          "name":"Eat That Frog!",
           "category":"Self-help",
           "auther":"David D. Burns",
           "price":"12.34$",
@@ -82,7 +82,7 @@
           "book-url":"pdf/self-help/book-9.pdf"
        },
        {
-          "name":"You Are a Badass: How to Stop Doubting Your Greatness and Start Living an Awesome Life",
+          "name":"You Are a Badass",
           "category":"Self-help",
           "auther":"Jen Sincero",
           "price":"7.25$",
@@ -91,7 +91,7 @@
           "book-url":"pdf/self-help/book-10.pdf"
        },
        {
-          "cookbooks":{
+          "Cookbooks":{
              "name":"Think and Grow Rich",
              "category":"Cookbooks",
              "auther":"Heviz's",

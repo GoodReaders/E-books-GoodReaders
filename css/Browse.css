@@ -1,0 +1,50 @@
+img{
+    height: 200px;
+    width: 150px;
+
+}
+.one-book{
+border:1px solid black;
+padding:10px;
+text-align: center;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+width: 200px;
+height: 400px;
+
+
+
+}
+.bookInfo h6{
+    margin:5px;
+}
+.bookInfo :first-child{
+    font-size:20px ;
+   
+}
+.one-book:hover{
+box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.9), 0 25px 60px 0 rgba(0, 0, 0, 0.9);
+transform: scale(1.2, 1.2);
+}
+
+.books{
+display:grid;
+grid-gap: 50px 120px;
+grid-template-columns: 200px 200px 200px 200px 200px;
+padding:10px;
+}
+h2{
+ padding-left: 10px; 
+ font-size: 50px;  
+}
+
+body{
+    font-size: 20px;
+}
+.read-button{
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+
+
