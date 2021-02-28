@@ -369,8 +369,8 @@
            "published-date":" '1/4/1819'",
            "img-url":"images/novel/book-1.jpg",
            "book-url":"pdf/novel/the_vampyre.pdf",
-           "introduction":"A young English gentleman of means, Aubrey, is immediately intrigued by Lord Ruthven, the mysterious newcomer among society's elite. The young man soon discovers a sinister character hidden behind his new friend's glamorous facade. John William Polidori's The Vampyre is both a classic tale of gothic horror and the progenitor of the modern romantic vampire myth that has been fodder for artists ranging from Anne Rice to Alan Ball to Francis Ford Coppola."
-
+           "introduction":"A young English gentleman of means, Aubrey, is immediately intrigued by Lord Ruthven, the mysterious newcomer among society's elite. The young man soon discovers a sinister character hidden behind his new friend's glamorous facade. John William Polidori's The Vampyre is both a classic tale of gothic horror and the progenitor of the modern romantic vampire myth that has been fodder for artists ranging from Anne Rice to Alan Ball to Francis Ford Coppola.",
+           "id-num":1
            
         },
         "name":"'The Man Who Knew Too Much'",
@@ -380,7 +380,8 @@
         "published-date":"'20/3/1922'",
         "img-url":"images/novel/book-2.jpg",
         "book-url":"pdf/novel/the_man_who_knew_too_much.pdf",
-        "introduction":"The Man Who Knew Too Much traces the activities of Horne Fisher and his trusted friend Harold March. Although Horne's keen mind and powerful deductive gifts make him a natural sleuth, his inquiries have a way of developing moral complications. Notable for their wit and sense of wonder, these tales offer an evocative portrait of upper-crust society in pre–World War I England."
+        "introduction":"The Man Who Knew Too Much traces the activities of Horne Fisher and his trusted friend Harold March. Although Horne's keen mind and powerful deductive gifts make him a natural sleuth, his inquiries have a way of developing moral complications. Notable for their wit and sense of wonder, these tales offer an evocative portrait of upper-crust society in pre–World War I England.",
+        "id-num":2
      },
      {
         "name":"The Last of the Mohicans",
@@ -390,7 +391,8 @@
         "published-date":"'2/1/1826'",
         "img-url":"images/novel/book-3.jpg",
         "book-url":"pdf/novel/the_last_of_the_mohicans.pdf",
-        "introduction":"As the French and Indian war rages, the two daughters of a British officer prepare to return home. But when, Cora, Alice and the soldiers who guard them are betrayed by their Native American scout, their safety depends on wily forest tracker Hawkeye and his friends Chingachkook and Uncas - the last of the Mohicans. As the idyllic wilderness gives way to the forces of civilization, the novel presents a moving portrayal of a vanishing race and the end of its way of life in the great American forests."
+        "introduction":"As the French and Indian war rages, the two daughters of a British officer prepare to return home. But when, Cora, Alice and the soldiers who guard them are betrayed by their Native American scout, their safety depends on wily forest tracker Hawkeye and his friends Chingachkook and Uncas - the last of the Mohicans. As the idyllic wilderness gives way to the forces of civilization, the novel presents a moving portrayal of a vanishing race and the end of its way of life in the great American forests.",
+        "id-num":3
      },
      {
         "name":"The Little Prince",
@@ -400,7 +402,8 @@
         "published-date":"6/4/1943",
         "img-url":"images/novel/book-4.jpg",
         "book-url":"pdf/novel/the_little_prince.pdf",
-        "introduction":"Moral allegory and spiritual autobiography, The Little Prince is the most translated book in the French language. With a timeless charm it tells the story of a little boy who leaves the safety of his own tiny planet to travel the universe, learning the vagaries of adult behaviour through a series of extraordinary encounters. His personal odyssey culminates in a voyage to Earth and further adventures."
+        "introduction":"Moral allegory and spiritual autobiography, The Little Prince is the most translated book in the French language. With a timeless charm it tells the story of a little boy who leaves the safety of his own tiny planet to travel the universe, learning the vagaries of adult behaviour through a series of extraordinary encounters. His personal odyssey culminates in a voyage to Earth and further adventures.",
+        "id-num":4
      },
      {
         "name":"The Three Musketeers",
@@ -410,7 +413,8 @@
         "published-date":"'13/1/1973",
         "img-url":"images/novel/book-5.jpg",
         "book-url":"pdf/novel/the_three_musketeers.pdf",
-        "introduction":"Dumas transforms minor historical figures into larger- than-life characters: the Comte d’Artagnan, an impetuous young man in pursuit of glory; the beguilingly evil seductress “Milady”; the powerful and devious Cardinal Richelieu; the weak King Louis XIII and his unhappy queen; and, of course, the three musketeers themselves, Athos, Porthos, and Aramis, whose motto “all for one, one for all” has come to epitomize devoted friendship. With a plot that delivers stolen diamonds, masked balls, purloined letters, and, of course, great bouts of swordplay, The Three Musketeers is eternally entertaining."
+        "introduction":"Dumas transforms minor historical figures into larger- than-life characters: the Comte d’Artagnan, an impetuous young man in pursuit of glory; the beguilingly evil seductress “Milady”; the powerful and devious Cardinal Richelieu; the weak King Louis XIII and his unhappy queen; and, of course, the three musketeers themselves, Athos, Porthos, and Aramis, whose motto “all for one, one for all” has come to epitomize devoted friendship. With a plot that delivers stolen diamonds, masked balls, purloined letters, and, of course, great bouts of swordplay, The Three Musketeers is eternally entertaining.",
+        "id-num":5
      },
      {
         "name":"Madame Bovary",
@@ -420,7 +424,8 @@
         "published-date":"16/3/1856",
         "img-url":"images/novel/book-6.jpg",
         "book-url":"pdf/novel/madame_bovary.pdf",
-        "introduction":"Unanimously considered one of the best novels of all time, Madame Bovary recounts the dark tragedy of Emma Bovary, an unhappily married woman whose dreams cruelly collide with reality. To the spell exercised by the figure of the protagonist we must add the wise plot combination of rebellion, violence, melodrama and sex, the four pillars that support this unique story."
+        "introduction":"Unanimously considered one of the best novels of all time, Madame Bovary recounts the dark tragedy of Emma Bovary, an unhappily married woman whose dreams cruelly collide with reality. To the spell exercised by the figure of the protagonist we must add the wise plot combination of rebellion, violence, melodrama and sex, the four pillars that support this unique story.",
+        "id-num":6
      },
      {
         "name":"The Strange Case of Dr. Jekyll and Mr. haydi",
@@ -430,7 +435,8 @@
         "published-date":"5/6/1886",
         "img-url":"images/novel/book-7.jpg",
         "book-url":"pdf/novel/the_strange_case_of_dr_jekyll_and_mr_hyde.pdf",
-        "introduction":"Idealistic young scientist Henry Jekyll struggles to unlock the secrets of the soul. Testing chemicals in his lab, he drinks a mixture he hopes will isolate - and eliminate - human evil. Instead it unleashes the dark forces within him, transforming him into the hideous and murderous Mr. Hyde. The Strange Case of Dr. Jekyll and Mr. Hyde dramatically brings to life a case study of the nature of good and evil and the duality that can exist within one person. Today Stevenson's novella is recognized as an incisive study of Victorian morality and sexual repression, as well as a great thriller."
+        "introduction":"Idealistic young scientist Henry Jekyll struggles to unlock the secrets of the soul. Testing chemicals in his lab, he drinks a mixture he hopes will isolate - and eliminate - human evil. Instead it unleashes the dark forces within him, transforming him into the hideous and murderous Mr. Hyde. The Strange Case of Dr. Jekyll and Mr. Hyde dramatically brings to life a case study of the nature of good and evil and the duality that can exist within one person. Today Stevenson's novella is recognized as an incisive study of Victorian morality and sexual repression, as well as a great thriller.",
+        "id-num":7
      },
      {
         "name":"The Brothers Karamazov",
@@ -440,7 +446,8 @@
         "published-date":"1/11/1880",
         "img-url":"images/novel/book-8.jpg",
         "book-url":"pdf/novel/the_brothers_karamazov.pdf",
-        "introduction":"The Brothers Karamasov is a murder mystery, a courtroom drama, and an exploration of erotic rivalry in a series of triangular love affairs involving the “wicked and sentimental” Fyodor Pavlovich Karamazov and his three sons―the impulsive and sensual Dmitri; the coldly rational Ivan; and the healthy, red-cheeked young novice Alyosha. Through the gripping events of their story, Dostoyevsky portrays the whole of Russian life, is social and spiritual striving, in what was both the golden age and a tragic turning point in Russian culture."
+        "introduction":"The Brothers Karamasov is a murder mystery, a courtroom drama, and an exploration of erotic rivalry in a series of triangular love affairs involving the “wicked and sentimental” Fyodor Pavlovich Karamazov and his three sons―the impulsive and sensual Dmitri; the coldly rational Ivan; and the healthy, red-cheeked young novice Alyosha. Through the gripping events of their story, Dostoyevsky portrays the whole of Russian life, is social and spiritual striving, in what was both the golden age and a tragic turning point in Russian culture.",
+        "id-num":8
      },
      {
         "name":"Robin Hood",
@@ -450,7 +457,8 @@
         "published-date":"56,16/2/1883",
         "img-url":"images/novel/book-9.jpg",
         "book-url":"pdf/novel/robin_hood_in_english.pdf",
-        "introduction":"Fooled into committing a crime by the king's foresters, young Robin Hood finds himself branded an outlaw. As he takes refuge in Sherwood Forest, he meets other hideaways who also unjustly find themselves on the wrong side of the law. Under Robin's leadership, these outlaws form a band of merry men who exact justice against the unfair laws of the land by stealing from the rich and giving their loot to the poor. Robin Hood is a legendary heroic outlaw originally depicted in English folklore and subsequently featured in literature and film."
+        "introduction":"Fooled into committing a crime by the king's foresters, young Robin Hood finds himself branded an outlaw. As he takes refuge in Sherwood Forest, he meets other hideaways who also unjustly find themselves on the wrong side of the law. Under Robin's leadership, these outlaws form a band of merry men who exact justice against the unfair laws of the land by stealing from the rich and giving their loot to the poor. Robin Hood is a legendary heroic outlaw originally depicted in English folklore and subsequently featured in literature and film.",
+        "id-num":9
 
         
      },
@@ -462,7 +470,8 @@
         "published-date":"16/8/1915",
         "img-url":"images/novel/book-10.jpg",
         "book-url":"pdf/novel/the_jacket.pdf",
-        "introduction":"A framing story is told in the first person by Darrell Standing, a university professor serving life imprisonment in San Quentin State Prison for murder. Prison officials try to break his spirit by means of a torture device called the jacket, a canvas jacket which can be tightly laced so as to compress the whole body, inducing angina. Standing discovers how to withstand the torture by entering a kind of trance state, in which he walks among the stars and experiences portions of past lives."
+        "introduction":"A framing story is told in the first person by Darrell Standing, a university professor serving life imprisonment in San Quentin State Prison for murder. Prison officials try to break his spirit by means of a torture device called the jacket, a canvas jacket which can be tightly laced so as to compress the whole body, inducing angina. Standing discovers how to withstand the torture by entering a kind of trance state, in which he walks among the stars and experiences portions of past lives.",
+        "id-num":10
      }
      ,
      {
@@ -474,7 +483,8 @@
            "published-date":" 14/5/1909",
            "img-url":"images/Shortstories/book-2.jpg",
            "book-url":"pdf/short stories/romantic_legends_of_spain.pdf",
-           "introduction":"Do you see that man with the scarlet cloak and the white plume in his hat,—the one who seems to wear on his waistcoat all the gold of the galleons of the Indies,—that man, I mean, just stepping down from his litter to give his hand to the lady there, who, now that she is out of hers, is coming our way, preceded by four pages with torches? Well, that is the Marquis of Moscoso, suitor to the widowed Countess of Villapineda. They say that before setting his eyes upon this lady, he had asked in marriage the daughter of a man of large fortune, but the girl’s father, of whom the rumor goes that he is a bit of a miser,—but hush! Speaking of the devil—do you see that man coming on foot under the..."
+           "introduction":"Do you see that man with the scarlet cloak and the white plume in his hat,—the one who seems to wear on his waistcoat all the gold of the galleons of the Indies,—that man, I mean, just stepping down from his litter to give his hand to the lady there, who, now that she is out of hers, is coming our way, preceded by four pages with torches? Well, that is the Marquis of Moscoso, suitor to the widowed Countess of Villapineda. They say that before setting his eyes upon this lady, he had asked in marriage the daughter of a man of large fortune, but the girl’s father, of whom the rumor goes that he is a bit of a miser,—but hush! Speaking of the devil—do you see that man coming on foot under the...",
+           "id-num":1
         },
         "name":"The Bet and Other Stories",
         "category":"short stories",
@@ -483,7 +493,8 @@
         "published-date":"6/7/1915",
         "img-url":"images/Shortstories/book-1.jpg",
         "book-url":"pdf/short stories/the_bet_and_other_stories.pdf",
-        "introduction":"It was a dark autumn night. The old banker was pacing from corner to corner of his study, recalling to his mind the party he gave in the autumn fifteen years ago. There were many clever people at the party and much interesting conversation. They talked among other things of capital punishment. The guests, among them not a few scholars and journalists, for the most part disapproved of capital punishment."
+        "introduction":"It was a dark autumn night. The old banker was pacing from corner to corner of his study, recalling to his mind the party he gave in the autumn fifteen years ago. There were many clever people at the party and much interesting conversation. They talked among other things of capital punishment. The guests, among them not a few scholars and journalists, for the most part disapproved of capital punishment.",
+        "id-num":2
      },
      {
         "name":"The Canterville Ghost",
@@ -493,7 +504,8 @@
         "published-date":"2/2/1887",
         "img-url":"images/Shortstories/book-3.jpg",
         "book-url":"pdf/short stories/the_canterville_ghost.pdf",
-        "introduction":"This is Oscar Wilde's tale of the American family moved into a British mansion, Canterville Chase, much to the annoyance of its tired ghost. The tale is rich with allusion. Wilde wrote "The Canterville Ghost" as a twist on the traditional ghost story, as a satire of American materialism, and as a way to parody English culture as well."
+        "introduction":"This is Oscar Wilde's tale of the American family moved into a British mansion, Canterville Chase, much to the annoyance of its tired ghost. The tale is rich with allusion. Wilde wrote The Canterville Ghost as a twist on the traditional ghost story, as a satire of American materialism, and as a way to parody English culture as well.",
+        "id-num":3
      },
      {
         "name":"The Portrait of Mr. W. H",
@@ -503,7 +515,8 @@
         "published-date":"6/4/1943",
         "img-url":"images/Shortstories/book-4.jpg",
         "book-url":"pdf/short stories/the_portrait_of_mr._w._h_.pdf",
-        "introduction":"The story is about an attempt to uncover the identity of Mr. W. H., the enigmatic dedicatee of Shakespeare's Sonnets. It is based on a theory, originated by Thomas Tyrwhitt, that the sonnets were addressed to one Willie Hughes, portrayed in the story as a boy actor who specialized in playing women in Shakespeare's company. This theory depends on the assumption that the dedicatee is also the Fair Youth who is the subject of most of the poems."
+        "introduction":"The story is about an attempt to uncover the identity of Mr. W. H., the enigmatic dedicatee of Shakespeare's Sonnets. It is based on a theory, originated by Thomas Tyrwhitt, that the sonnets were addressed to one Willie Hughes, portrayed in the story as a boy actor who specialized in playing women in Shakespeare's company. This theory depends on the assumption that the dedicatee is also the Fair Youth who is the subject of most of the poems.",
+        "id-num":4
      },
      {
         "name":"White Nights",
@@ -513,7 +526,8 @@
         "published-date":"'13/1/1973",
         "img-url":"images/Shortstories/book-5.jpg",
         "book-url":"pdf/short stories/white_nights.pdf",
-        "introduction":"White Nights is the story of a young man fighting his inner restlessness. His unnamed protagonist is a sensitive, poetic resident of the very Westernized St. Petersburg of the mid-nineteenth century. A light and tender narrative, it delves into the torment and guilt of unrequited love. Both protagonists suffer from a deep sense of alienation that initially brings them together. A blend of romanticism and realism, the story appeals gently to the senses and feelings."
+        "introduction":"White Nights is the story of a young man fighting his inner restlessness. His unnamed protagonist is a sensitive, poetic resident of the very Westernized St. Petersburg of the mid-nineteenth century. A light and tender narrative, it delves into the torment and guilt of unrequited love. Both protagonists suffer from a deep sense of alienation that initially brings them together. A blend of romanticism and realism, the story appeals gently to the senses and feelings.",
+        "id-num":5
 
         
      },
@@ -525,7 +539,10 @@
         "published-date":"16/3/1856",
         "img-url":"images/Shortstories/book-6.jpg",
         "book-url":"pdf/short stories/em_ariza.pdf",
-        "introduction":
+        "introduction":"I Don’t Want to Win a Nobel Prize! By EM Ariza
+        Think about it for a moment and I’m sure you’ll agree. It’s as if the Boston Strangler had established an award for the “Most Elegantly Made Rope”. Or if the Milwaukee Cannibal offered a diploma for the “Sharpest Knife”. As if Hitler had established a prize for Jew of the Year, or Stalin for Democrat of the Century. As if Dracula had created the Best Blood Transfusion Award, or Nero the prize for Fire Fighter of the Decade, or Henry VIII for Wife of the Month. Wouldn’t any of these prizes be downright crazy? Well, that’s exactly why I’ve decided that I don’t want to win a Nobel Prize",
+        "id-num":6
+        
      },
      {
         "name":"A Woman’s Kingdom",
@@ -535,8 +552,8 @@
         "published-date":"5/6/1886",
         "img-url":"images/Shortstories/book-7.jpg",
         "book-url":"pdf/short stories/a_woman_s_kingdom.pdf",
-        "introduction": "I Don’t Want to Win a Nobel Prize! By EM Ariza
-        Think about it for a moment and I’m sure you’ll agree. It’s as if the Boston Strangler had established an award for the “Most Elegantly Made Rope”. Or if the Milwaukee Cannibal offered a diploma for the “Sharpest Knife”. As if Hitler had established a prize for Jew of the Year, or Stalin for Democrat of the Century. As if Dracula had created the Best Blood Transfusion Award, or Nero the prize for Fire Fighter of the Decade, or Henry VIII for Wife of the Month. Wouldn’t any of these prizes be downright crazy? Well, that’s exactly why I’ve decided that I don’t want to win a Nobel Prize"
+        "introduction": "A Woman's Kingdom presents the world of Anna Akimovna. She is the rich factory owner whom everyone depends on for work and charity. However, although she has everyone admiring her, she is lonely and unhappy. She longs to marry. Try as she might to escape the factory, Anna Akimovna is mired in her woman’s kingdom. She is too rarefied to love a working man, too sensitive to enjoy her power and privileges ruthlessly, too fearful to effect social change, too newly-rich to escape snubbing.",
+        "id-num":7
      },
      {
         "name":"What Christmas is as We Grow older",
@@ -546,7 +563,8 @@
         "published-date":"1/11/1880",
         "img-url":"images/Shortstories/book-8.jpg",
         "book-url":"pdf/short stories/what_christmas_is_as_we_grow_older.pdf",
-        "introduction":"Published from 1851 to 1853, Household Words featured as its main attraction during the Christmas season a lengthy short story penned by Dickens himself. During these years Dickens’s world view underwent a sea change, from youthful optimism to looming disillusion with the course of human affairs. These points of view intermingle to intriguing effect in his short story, “What Christmas Is As We Grow Older,” when the old optimism rears its head again and reaffirms his belief in goodness and the memory of better days and the love between family and dear friends."
+        "introduction":"Published from 1851 to 1853, Household Words featured as its main attraction during the Christmas season a lengthy short story penned by Dickens himself. During these years Dickens’s world view underwent a sea change, from youthful optimism to looming disillusion with the course of human affairs. These points of view intermingle to intriguing effect in his short story, “What Christmas Is As We Grow Older,” when the old optimism rears its head again and reaffirms his belief in goodness and the memory of better days and the love between family and dear friends.",
+        "id-num":8
      },
      {
         "name":"The Gift of the Magi",
@@ -556,7 +574,8 @@
         "published-date":"56,16/2/1883",
         "img-url":"images/Shortstories/book9.jpg",
         "book-url":"pdf/short stories/the_gift_of_the_magi.pdf",
-        "introduction":"One dollar and eight-seven cents is all the money Della has in the world to buy her beloved husband a Christmas present. She has nothing to sell except her only treasure -- her long, beautiful brown hair. Set in New York at the turn of the twentieth century, this classic piece of American literature tells the story of a young couple and the sacrifices each must make to buy the other a gift. A simple tale about the rewards of unselfish love."
+        "introduction":"One dollar and eight-seven cents is all the money Della has in the world to buy her beloved husband a Christmas present. She has nothing to sell except her only treasure -- her long, beautiful brown hair. Set in New York at the turn of the twentieth century, this classic piece of American literature tells the story of a young couple and the sacrifices each must make to buy the other a gift. A simple tale about the rewards of unselfish love.",
+        "id-num":9
      },
      {
         "name":"At Your Age",
@@ -566,7 +585,8 @@
         "published-date":"16/8/1915",
         "img-url":"images/Shortstories/book-10.jpg",
         "book-url":"pdf/short stories/at_your_age.pdf",
-        "introduction":"At Your Age, a 1929 short story published in the Saturday Evening Post, contains all the trademark elements that F. Scott Fitzgerald's readers had come to expect by the end of the Jazz Age. At fifty, Tom is attracted as much to Annie Lorry's age as to her beauty or social status. She is for him a veritable fountain of youth, revivifying memories of the warm sureties of his own adolescence and reintroducing him to the very terminology of young romance."
+        "introduction":"At Your Age, a 1929 short story published in the Saturday Evening Post, contains all the trademark elements that F. Scott Fitzgerald's readers had come to expect by the end of the Jazz Age. At fifty, Tom is attracted as much to Annie Lorry's age as to her beauty or social status. She is for him a veritable fountain of youth, revivifying memories of the warm sureties of his own adolescence and reintroducing him to the very terminology of young romance.",
+        "id-num":10
      }
      
     ]

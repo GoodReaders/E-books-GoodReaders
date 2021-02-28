@@ -11,8 +11,10 @@ body {
     float: left;
     width: 18%;
     margin-bottom: 16px;
-    padding: 0 8px;
+    padding:  8px;
     position: relative;
+    margin-left: 2px;
+    margin-right: 10px;
   }
   
   .card {
