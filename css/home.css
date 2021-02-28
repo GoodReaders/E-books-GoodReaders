@@ -1,0 +1,234 @@
+:root {
+    --primaryColor: #f09d51;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: "Lato", sans-serif;
+  }
+
+  .products {
+    padding-bottom: 4rem;
+  }
+
+/* Nav bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgb(231, 226, 221);
+    z-index: 1;
+  }
+  .navbar-center {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+  }
+
+  .navbar-center a {
+      text-decoration: none;
+      color: #222;
+  }
+  .nav-icon {
+    font-size: 1.5rem;
+  }
+  .cart-btn {
+    position: relative;
+    cursor: pointer;
+  }
+  .cart-items {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--primaryColor);
+    padding: 0 5px;
+    border-radius: 30%;
+    color: var(--mainWhite);
+  }
+
+  /* End nav bar */
+
+/* hero */
+
+.hero {
+    min-height: calc(100vh - 70px);
+    background: url("http://thesweetsetup.com/wp-content/uploads/2016/12/eBooks-Ecosystems-SS-Hero-2.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  .banner {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 2rem;
+  }
+  .banner-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 3rem;
+  }
+
+  .banner-btn {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    font-size: 1rem;
+    background: var(--primaryColor);
+    color: var(--mainBlack);
+    border: 1px solid var(--primaryColor);
+    transition: var(--mainTransition);
+    cursor: pointer;
+  }
+  .banner-btn:hover {
+    background: transparent;
+    color: var(--primaryColor);
+  }
+
+  /* End of hero */ 
+
+  /* products */
+
+  .section-title h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+  }
+  .section-name {
+    font-weight: 300;
+    margin: 20px 90px;
+    font-size: 1.2rem; 
+  }
+  .products-center {
+    width: 50vw;
+    margin: 0 30px;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1rem;
+  }
+  .img-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .bag-btn {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    background: var(--primaryColor);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: var(--mainSpacing);
+    font-weight: bold;
+    transition: var(--mainTransition);
+    transform: translateX(101%);
+    cursor: pointer;
+  }
+  .bag-btn:hover {
+    color: var(--mainWhite);
+  }
+  .fa-shopping-cart {
+    margin-right: 0.5rem;
+  }
+  .img-container:hover .bag-btn {
+    transform: translateX(0);
+  }
+  .product-img {
+    display: block;
+    width: 100%;
+    min-height: 12rem;
+    transition: var(--mainTransition);
+  }
+  .img-container:hover .product-img {
+    opacity: 0.5;
+  }
+  
+  .product h3 {
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    letter-spacing: var(--mainSpacing);
+    text-align: center;
+  }
+
+.products .section-title  h2{
+      font-size: 2rem;
+      font-weight: 700;
+  }
+
+  /* .products h2 {
+      font-weight: 300;
+      margin: 20px 30px;
+      font-size: 1.2rem
+  } */
+  
+  .product h4 {
+    margin-top: 0.7rem;
+    letter-spacing: var(--mainSpacing);
+    color: var(--primaryColor);
+    text-align: center;
+  }
+
+  .products h3 {
+      margin: 10px 30px;
+      color: var(--mainBlack);
+      font-weight:300;
+  }
+
+  .products hr {
+      width:50%;
+      margin:20px 90px;
+  }
+
+
+  .container-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 6em;
+      width:90%;
+      margin: 0 auto;
+  }
+  .quotes {
+    background-color:var(--mainGrey);
+    padding:0 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+  .quotes ul {
+      list-style-type: none;
+  }
+
+  .quotes ul li {
+      margin: 30px 0px;
+      font-size: 0.8em;
+  }
+  .quotes h3{
+      margin:10px 0;
+  }
+ 
+
+/* End of products */
+
