@@ -368,7 +368,7 @@
            "price":"20.45$",
            "published-date":" '1/4/1819'",
            "img-url":"images/novel/book-1.jpg",
-           "book-url":"pdf/cookbooks/book-1.pdf"
+           "book-url":"pdf/novel/the_vampyre.pdf"
         },
         "name":"'The Man Who Knew Too Much'",
         "category":"novel",
@@ -376,7 +376,7 @@
         "price":"25.65$",
         "published-date":"'20/3/1922'",
         "img-url":"images/novel/book-2.jpg",
-        "book-url":"pdf/cookbooks/book-2.pdf"
+        "book-url":"pdf/novel/the_man_who_knew_too_much.pdf"
      },
      {
         "name":"'The Last of the Mohicans",
@@ -385,7 +385,7 @@
         "price":"40.36$",
         "published-date":"'2/1/1826'",
         "img-url":"images/novel/book-3.jpg",
-        "book-url":"pdf/cookbooks/book-3.pdf"
+        "book-url":"pdf/novel/the_last_of_the_mohicans.pdf"
      },
      {
         "name":"The Little Prince",
@@ -394,7 +394,7 @@
         "price":"11.72$",
         "published-date":"6/4/1943",
         "img-url":"images/novel/book-4.jpg",
-        "book-url":"pdf/cookbooks/book-4.pdf"
+        "book-url":"pdf/novel/the_little_prince.pdf"
      },
      {
         "name":"'The Three Musketeers",
@@ -403,7 +403,7 @@
         "price":"24.47$",
         "published-date":"'13/1/1973",
         "img-url":"images/novel/book-5.jpg",
-        "book-url":"pdf/cookbooks/book-5.pdf"
+        "book-url":"pdf/novel/the_three_musketeers.pdf"
      },
      {
         "name":"Madame Bovary",
@@ -412,7 +412,7 @@
         "price":"11.99$",
         "published-date":"16/3/1856",
         "img-url":"images/novel/book-6.jpg",
-        "book-url":"pdf/cookbooks/book-6.pdf"
+        "book-url":"pdf/novel/madame_bovary.pdf"
      },
      {
         "name":"The Strange Case of Dr. Jekyll and Mr. haydi",
@@ -421,7 +421,7 @@
         "price":"15.69$",
         "published-date":"5/6/1886",
         "img-url":"images/novel/book-7.jpg",
-        "book-url":"pdf/cookbooks/book-7.pdf"
+        "book-url":"pdf/novel/the_strange_case_of_dr_jekyll_and_mr_hyde.pdf"
      },
      {
         "name":"The Brothers Karamazov",
@@ -430,7 +430,7 @@
         "price":"18.95$",
         "published-date":"1/11/1880",
         "img-url":"images/novel/book-8.jpg",
-        "book-url":"pdf/cookbooks/book-8.pdf"
+        "book-url":"pdf/novel/the_brothers_karamazov.pdf"
      },
      {
         "name":"'Robin Hood",
@@ -439,7 +439,7 @@
         "price":"12.48$",
         "published-date":"56,16/2/1883",
         "img-url":"images/novel/book-9.jpg",
-        "book-url":"pdf/cookbooks/book-9.pdf"
+        "book-url":"pdf/novel/robin_hood_in_english.pdf"
      },
      {
         "name":"The Jacket (The Star-Rover)",
@@ -448,7 +448,7 @@
         "price":" 13.95$",
         "published-date":"16/8/1915",
         "img-url":"images/novel/book-10.jpg",
-        "book-url":"pdf/cookbooks/book-10.pdf"
+        "book-url":"pdf/novel/the_jacket.pdf"
      }
      ,
      {
@@ -459,7 +459,7 @@
            "price":"20.45$",
            "published-date":" 14/5/1909",
            "img-url":"images/Shortstories/book-2.jpg",
-           "book-url":"pdf/cookbooks/book-1.pdf"
+           "book-url":"pdf/short stories/romantic_legends_of_spain.pdf"
         },
         "name":"The Bet and Other Stories",
         "category":"short stories",
@@ -467,16 +467,16 @@
         "price":"25.65$",
         "published-date":"6/7/1915",
         "img-url":"images/Shortstories/book-1.jpg",
-        "book-url":"pdf/cookbooks/book-2.pdf"
+        "book-url":"pdf/short stories/the_bet_and_other_stories.pdf"
      },
      {
-        "name":"'The Canterville Ghost",
+        "name":"The Canterville Ghost",
         "category":"short stories",
         "auther":"'Oscar Wilde",
         "price":"40.36$",
         "published-date":"2/2/1887",
         "img-url":"images/Shortstories/book-3.jpg",
-        "book-url":"pdf/cookbooks/book-3.pdf"
+        "book-url":"pdf/short stories/the_canterville_ghost.pdf"
      },
      {
         "name":"The Portrait of Mr. W. H",
@@ -485,7 +485,7 @@
         "price":"11.72$",
         "published-date":"6/4/1943",
         "img-url":"images/Shortstories/book-4.jpg",
-        "book-url":"pdf/cookbooks/book-4.pdf"
+        "book-url":"pdf/short stories/the_portrait_of_mr._w._h_.pdf"
      },
      {
         "name":"White Nights",
@@ -494,7 +494,7 @@
         "price":"24.47$",
         "published-date":"'13/1/1973",
         "img-url":"images/Shortstories/book-5.jpg",
-        "book-url":"pdf/cookbooks/book-5.pdf"
+        "book-url":"pdf/short stories/white_nights.pdf"
      },
      {
         "name":"I Don’t Want to Win a Nobel Prize!",
@@ -503,7 +503,7 @@
         "price":"11.99$",
         "published-date":"16/3/1856",
         "img-url":"images/Shortstories/book-6.jpg",
-        "book-url":"pdf/cookbooks/book-6.pdf"
+        "book-url":"pdf/short stories/em_ariza.pdf"
      },
      {
         "name":"A Woman’s Kingdom",
@@ -512,7 +512,7 @@
         "price":"15.69$",
         "published-date":"5/6/1886",
         "img-url":"images/Shortstories/book-7.jpg",
-        "book-url":"pdf/cookbooks/book-7.pdf"
+        "book-url":"pdf/short stories/a_woman_s_kingdom.pdf"
      },
      {
         "name":"What Christmas is as We Grow older",
@@ -521,7 +521,7 @@
         "price":"18.95$",
         "published-date":"1/11/1880",
         "img-url":"images/Shortstories/book-8.jpg",
-        "book-url":"pdf/cookbooks/book-8.pdf"
+        "book-url":"pdf/short stories/what_christmas_is_as_we_grow_older.pdf"
      },
      {
         "name":"The Gift of the Magi",
@@ -530,7 +530,7 @@
         "price":"12.48$",
         "published-date":"56,16/2/1883",
         "img-url":"images/Shortstories/book9.jpg",
-        "book-url":"pdf/cookbooks/book-9.pdf"
+        "book-url":"pdf/short stories/the_gift_of_the_magi.pdf"
      },
      {
         "name":"At Your Age",
@@ -539,7 +539,7 @@
         "price":" 13.95$",
         "published-date":"16/8/1915",
         "img-url":"images/Shortstories/book-10.jpg",
-        "book-url":"pdf/cookbooks/book-10.pdf"
+        "book-url":"pdf/short stories/at_your_age.pdf"
      }
      
     ]
