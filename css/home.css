@@ -81,10 +81,12 @@
     padding: 2rem;
   }
   .banner-title {
+    font-family:monospace;
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: var(--mainSpacing);
     margin-bottom: 3rem;
+    font-weight: 400;
   }
 
   .banner-btn {
@@ -227,8 +229,313 @@
   }
   .quotes h3{
       margin:10px 0;
+      font-size:0.9em;
+      font-weight: 200;
+      letter-spacing: var(--mainSpacing);
   }
  
 
 /* End of products */
 
+/* new code */ 
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+@media screen and (max-width: 30em){
+	.multi-level-nav ul ul li a {
+		padding-left: 2em;
+	}
+
+	.dropdown-toggle {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 30em){
+	.multi-level-nav ul {
+        display: grid;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+	}	
+
+	.multi-level-nav li {
+        /* flex: 1 0 auto; */
+		position: relative;
+        list-style-type:none;
+	}
+
+	li.has-children > a {
+		padding-right: 0;
+	}
+
+	.multi-level-nav ul ul {
+		display: none;
+		position: absolute;
+		z-index:100;
+        background-color: var(--mainGrey);
+	}
+
+	.multi-level-nav ul ul li {
+        /* flex: 1 1 auto; */
+        padding: 10px;
+        list-style-type: none;
+	}
+
+	.multi-level-nav ul .toggled-on {
+		display: grid;
+	}
+
+	.dropdown-toggle {
+		margin: 0;
+		padding: 0 .5em;
+		border: 0;
+		font-family: 'FontAwesome';
+		content: "";
+		text-transform: lowercase; /* Stop screen readers to read the text as capital letters */
+        color:white;
+		background-color: var(--primaryColor);
+	}
+
+	.dropdown-toggle:after {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 42px;
+		color: white;
+		content: "\f107";
+		line-height: 1em;	
+	}
+
+	.dropdown-toggle:hover,
+	.dropdown-toggle:focus {
+        background: var(--mainBlack);
+	}
+
+	.dropdown-toggle.toggle-on:after {
+		content: "\f106";
+	}
+}
+
+/* new code */ 
+
+/* footer */
+.footer {
+    padding: 3em 3em 0;
+    background: hsl(0, 0%, 10%);
+    color: #FFFCED;
+}
+
+@media screen and (min-width: 50em) {
+    .footer-widgets {
+        -js-display: flex;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .widget {
+        width: 30%;
+    }
+
+}
+
+.widget-title {
+    font-size: 1.3em;
+}
+
+
+
+.footer-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-menu a {
+    display: block;
+    padding-bottom: .5em;
+    color: #FFFCED;
+    text-decoration: none;
+}
+
+.footer-menu a:focus::before,
+.footer-menu a:hover::before {
+    margin-right: .5em;
+    content: "›";
+}
+
+.footer-cta a {
+    display: block;
+    margin-top: 1em;
+    padding: 0 .5em;
+    font-size: 2em;
+    font-weight: 900;
+    color: #fffced;
+    text-align: center;
+    text-decoration: none;
+    border: 5px solid #fffced;
+}
+
+.footer-cta a:focus,
+.footer-cta a:hover {
+    background: var(--primaryColor)
+}
+
+.social-nav {
+    margin: 4em -3em 0;
+    padding: 1em 0;
+    background: var(--mainGrey)
+}
+
+.social-nav ul {
+    -js-display: flex;
+    display: flex;
+    justify-content: center;
+
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-nav a {
+    padding: 1em;
+}
+
+.social-nav svg {
+    width: 1.4em;
+    height: auto;
+
+}
+
+.social-nav path {
+    fill: #FFFCED;
+}
+
+.social-nav ul li a i {
+    font-size: 1.5em;
+    color: var(--mainBlack);
+}
+
+
+/* footer */
+
+/* cart */
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: var(--mainTransition);
+    background: rgb(240, 157, 81, 0.5);
+    z-index: 2;
+    visibility: hidden;
+  }
+  .cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    z-index: 3;
+    background: rgb(231, 226, 221);
+    padding: 1.5rem;
+    transition: var(--mainTransition);
+    transform: translateX(100%);
+  }
+  .showCart {
+    transform: translateX(0);
+  }
+  .transparentBcg {
+    visibility: visible;
+  }
+  @media screen and (min-width: 768px) {
+    .cart {
+      width: 30vw;
+      min-width: 400px;
+    }
+  }
+  
+  .close-cart {
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+  .cart h2 {
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 2rem;
+  }
+  /*---------- Cart Item -------------------- */
+  .cart-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .cart-item img {
+    width: 75px;
+    height: 75px;
+  }
+  .cart-item h4 {
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+  }
+  .cart-item h5 {
+    margin: 0.5rem 0;
+    letter-spacing: var(--mainSpacing);
+  }
+  .item-amount {
+    text-align: center;
+  }
+  .remove-item {
+    color: grey;
+    cursor: pointer;
+  }
+  .fa-chevron-up,
+  .fa-chevron-down {
+    color: var(--primaryColor);
+    cursor: pointer;
+  }
+  /*---------- End of Cart Item -------------------- */
+  
+  .cart-footer {
+    margin-top: 2rem;
+    letter-spacing: var(--mainSpacing);
+    text-align: center;
+  }
+  .cart-footer h3 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+  
+  /* --------------- End of Cart ---------------- */
+  
