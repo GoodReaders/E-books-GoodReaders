@@ -14,7 +14,7 @@ Products.prototype.getProducts = async () => {
             const name = book.name;
             const author = book.author;
             const price = book.price;
-            const publishedDate = book['published=date']
+            const publishedDate = book['published-date']
             const pdf = book['book-url'];
             const intro = book.introduction;
             // const image = book.image-url;
