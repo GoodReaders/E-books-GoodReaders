@@ -22,7 +22,7 @@
           "published-date":"11/4/2017",
           "img-url":"../images/self-help/book-2.jpg",
           "book-url":"pdf/self-help/book-2.pdf",
-          "id" : "2"",
+          "id" : "2",
            "introduction": "What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not! "
           },
        {
@@ -177,7 +177,7 @@
           "published-date":" 20/6/2017",
           "img-url":"../images/cookbooks/book-6.jpg",
           "book-url":"pdf/cookbooks/book-6.pdf",
-          "id" : "6"",
+          "id" : "6",
           "introduction": "Dozens of Recipes for Artisan Loaves, Crackers, and Sweet Breads"
        },
        {
