@@ -182,50 +182,6 @@ a.button {
     font-weight:600;
 }
 
-/* Nav bar */
-.navbar {
-  position: sticky;
-  top: 0;
-  height: 70px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background: rgb(231, 226, 221);
-  z-index: 1;
-}
-.navbar-center {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1.5rem;
-}
-
-.navbar-center a {
-    text-decoration: none;
-    color: #222;
-}
-.nav-icon {
-  font-size: 1.5rem;
-}
-.cart-btn {
-  position: relative;
-  cursor: pointer;
-}
-.cart-items {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background: var(--primaryColor);
-  padding: 0 5px;
-  border-radius: 30%;
-  color: var(--mainWhite);
-}
-
-/* End nav bar */
-
 /* footer */
 .footer {
   padding: 3em 3em 0;
