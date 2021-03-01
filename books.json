@@ -207,213 +207,6 @@
           "id" : "10"
        }
       ],
-         "poetry": [
-         {
-            "name":"Leaves of Grass",
-            "category":"poetry",
-            "author":"by Walt Whitman",
-            "price":"15.00$",
-            "published-date":"3/9/1855",
-            "img-url":"../images/poetry-../images/book-1.jpg",
-            "book-url":"pdf/poetry-pdf/book-1.pdf",
-            "id" : "1"
-         },
-         {
-         "name":"Milk and Honey",
-         "category":"poetry",
-         "author":"Rupi Kaur",
-         "price":"27.62$",
-         "published-date":"6/10/2015",
-         "img-url":"../images/poetry-../images/book-3.jpg",
-         "book-url":"pdf/poetry-pdf/book-2.pdf",
-         "id" : "2"
-      },
-      {
-         "name":"Love & Misadventure",
-         "category":"poetry",
-         "author":"Lang Leav",
-         "price":"20.62$",
-         "published-date":"17/9/2013",
-         "img-url":"../images/self-help/book-3.jpg",
-         "book-url":"pdf/poetry-pdf/book-3.pdf",
-         "id" : "3"
-      },
-      {
-         "name":"How to Win Friends and Influence People",
-         "category":"Self-help",
-         "author":"Dale Carnegie",
-         "price":" 14.60$",
-         "published-date":"17/9/2013",
-         "img-url":"../images/poetry-../images/book-4.jpg",
-         "book-url":"pdf/poetry-pdf/book-4.pdf",
-         "id" : "4"
-      },
-      {
-         "name":"Sea of Strangers",
-         "category":"poetry",
-         "author":" Pierre Alex Jeanty",
-         "price":" 43.58$",
-         "published-date":"9/1/2018",
-         "img-url":"../images/poetry-../images/book-5.jpg",
-         "book-url":"pdf/poetry-pdf/book-5.pdf",
-         "id" : "5"
-        },
-        {
-           "name":"Her",
-           "category":"poetry",
-           "author":"David D. Burns",
-           "price":"50.34$",
-           "published-date":"11/2/2016",
-           "img-url":"../images/poetry-../images/book-6.jpg",
-           "book-url":"pdf/poetry-pdf/book-6.pdf",
-           "id" : "6"
-        },
-        
-        {
-           "name":"To the Women I Once Loved",
-           "category":"poetry",
-           "author":"Pierre Alex Jeanty",
-           "price":"43.34$",
-           "published-date":"4/9/2015",
-           "img-url":"../images/poetry-../images/book-7.jpg",
-           "book-url":"pdf/poetry-pdf/book-7.pdf",
-           "id" : "7"
-        }, 
-        {
-           "name":"Romeo and Juliet",
-           "category":"poetry",
-           "author":"William Shakespeare",
-           "price":"30.55$",
-           "published-date":"1/11/1597",
-           "img-url":"../images/poetry-../images/book-8.jpg",
-           "book-url":"pdf/poetry-pdf/book-8.pdf",
-           "id" : "8"
-          
-        },
-        {
-           "name":"Hamlet",
-           "category":"poetry",
-           "author":"William Shakespeare",
-           "price":"40.09$",
-           "published-date":"56,16/2/1603",
-           "img-url":"../images/poetry-../images/book-9.jpg",
-           "book-url":"pdf/poetry-pdf/book-9.pdf",
-           "id" : "9"
-        },
-      {
-         "name":"King Lear",
-         "category":"poetry",
-         "author":"William Shakespeare",
-         "price":"20.25$",
-         "published-date":"16/8/1623",
-         "img-url":"../images/poetry-../images/book-10.jpg",
-         "book-url":"pdf/poetry-pdf/book-10.pdf",
-         "id" : "10"
-      }
-   ],
-         "fitness": [
-         {
-            "id-number":"1",
-            "name":"Men's Fitness Complete Guide to Home Workouts",
-            "category":"fitness",
-            "author":"Men's Fitness",
-            "price":"18.45$",
-            "published-date":"1/1/2011",
-            "img-url":"../images/fitness-../images/book-1.jpg",
-            "book-url":"pdf/fitness-pdf/book-1.pdf",
-            "id" : "1"
-         },
-         {
-         "name":"The Cake Bible",
-         "category":"cookbooks",
-         "author":"Valeriu Cotet",
-         "price":"25.65$",
-         "published-date":"7/12/2015",
-         "img-url":"../images/cookbooks/book-2.jpg",
-         "book-url":"pdf/cookbooks/book-2.pdf",
-         "id" : "2"
-      },
-      {
-         "name":"The Flavor Bible",
-         "category":"cookbooks",
-         "author":"Karen Page",
-         "price":"40.36$",
-         "published-date":"1/9/2008",
-         "img-url":"../images/cookbooks/book-3.jpg",
-         "book-url":"pdf/cookbooks/book-3.pdf",
-         "id" : "3"
-      },
-      {
-         "name":"Good Housekeeping The Little Book of Baking",
-         "category":"cookbooks",
-         "author":"Susan Westmoreland",
-         "price":"11.72$",
-         "published-date":"2/10/2012",
-         "img-url":"../images/cookbooks/book-4.jpg",
-         "book-url":"pdf/cookbooks/book-4.pdf",
-         "id" : "4"
-      },
-      {
-         "name":"The Joy of Gluten-Free, Sugar-Free Baking",
-         "category":"cookbooks",
-         "author":"Peter Reinhart",
-         "price":"24.47$",
-         "published-date":"14/8/2012",
-         "img-url":"../images/cookbooks/book-5.jpg",
-         "book-url":"pdf/cookbooks/book-5.pdf",
-         "id" : "5"
-      },
-      {
-         "name":"Baking Sourdough Bread",
-         "category":"cookbooks",
-         "author":"Göran Söderin",
-         "price":"11.99$",
-         "published-date":" 20/6/2017",
-         "img-url":"../images/cookbooks/book-6.jpg",
-         "book-url":"pdf/cookbooks/book-6.pdf",
-         "id" : "6"
-      },
-      {
-         "name":"Keto Comfort Foods",
-         "category":"cookbooks",
-         "author":"Maria Emmerich",
-         "price":"15.69$",
-         "published-date":"2/5/2017",
-         "img-url":"../images/cookbooks/book-7.jpg",
-         "book-url":"pdf/cookbooks/book-7.pdf",
-         "id" : "7"
-      },
-      {
-         "name":"Healthy Indian Vegetarian Cooking",
-         "category":"cookbooks",
-         "author":"Shubhra Ramineni ",
-         "price":"18.95$",
-         "published-date":"4/6/2013",
-         "img-url":"../images/cookbooks/book-8.jpg",
-         "book-url":"pdf/cookbooks/book-8.pdf",
-         "id" : "8"
-      },
-      {
-         "name":"Fine Cooking Italian",
-         "category":"cookbooks",
-         "author":"Editors of Fine Cooking",
-         "price":"12.48$",
-         "published-date":"17/6/2012",
-         "img-url":"../images/cookbooks/book-9.jpg",
-         "book-url":"pdf/cookbooks/book-9.pdf",
-         "id" : "9"
-      },
-      {
-         "name":"Fine Cooking Comfort Food",
-         "category":"cookbooks",
-         "author":"Editors of Fine Cooking",
-         "price":" 13.95$",
-         "published-date":"8/11/2011",
-         "img-url":"../images/cookbooks/book-10.jpg",
-         "book-url":"pdf/cookbooks/book-10.pdf",
-         "id" : "10"
-      }
-   ],
       "Novel":[
          {
          "name":"The Vampyre",
@@ -864,9 +657,262 @@
          "img-url": "images/Art/book-10.jpg",
          "book-url": "pdf/Art/book-10.pdf"
       }
+   ],
+
+         "poetry":[
+            {
+            "name":"Leaves of Grass",
+            "category":"poetry",
+            "auther":"by Walt Whitman",
+            "price":"15.00$",
+            "published-date":"3/9/1855",
+            "img-url":"images/poetry-images/book-1.jpg",
+            "book-url":"pdf/poetry-pdf/book-1.pdf",
+            "id":"1",
+            "introduction":"collection of poetry by American author Walt Whitman, first presented as a group of 12 poems"
+           },
+          {
+            "name":"The Sun And Her Flowers",
+            "category":"poetry",
+            "auther":"Rupi Kaur",
+            "price":" 14.60$",
+            "published-date":"17/9/2013",
+            "img-url":"images/poetry-images/book-2.jpg",
+            "book-url":"pdf/poetry-pdf/book-2.pdf",
+            "id":"2",
+            "introduction":" A vibrant and transcendent journey about growth and healing. Ancestry and honoring one's roots. Expatriation and rising up to find a home within yourself. "
+
+           },
+           {
+            "name":"Milk and Honey",
+           "category":"poetry",
+           "auther":"Rupi Kaur",
+           "price":"27.62$",
+           "published-date":"6/10/2015",
+           "img-url":"images/poetry-images/book-3.jpg",
+           "book-url":"pdf/poetry-pdf/book-3.pdf",
+           "id":"3",
+           "introduction":"This land of milk and honey is a place of great beauty and hope, a metaphor for the Promised Land. Rupi Kaur equates this milk and honey with kindness."
+        
+           
+        },
+        {
+         "name":"Love & Misadventure",
+         "category":"poetry",
+         "auther":"Lang Leav",
+         "price":"20.62$",
+         "published-date":"17/9/2013",
+         "img-url":"images/self-help/book-4.jpg",
+         "book-url":"pdf/poetry-pdf/book-4.pdf",
+         "id":"4",
+         "introduction":" Love and Misadventure will take you on a rollercoaster ride through an ill-fated love affair."
+      },
+      {
+         "name":"Sea of Strangers",
+         "category":"poetry",
+         "auther":" Pierre Alex Jeanty",
+         "price":" 43.58$",
+         "published-date":"9/1/2018",
+         "img-url":"images/poetry-images/book-5.jpg",
+         "book-url":"pdf/poetry-pdf/book-5.pdf",
+         "id":"5",
+         "introduction":"a collection of Leav's trials attempting to grasp her own process of loving someone. "
+        },
+        {
+           "name":"Her",
+           "category":"poetry",
+           "auther":"David D. Burns",
+           "price":"50.34$",
+           "published-date":"11/2/2016",
+           "img-url":"images/poetry-images/book-6.jpg",
+           "book-url":"pdf/poetry-pdf/book-6.pdf",
+           "id":"6",
+           "introduction":"Pierre Alex Jeanty shares through poetry, prose, and quotes, his unique perspective on women encompassing their strength and realizing their beauty."
+
+
+        },
+        
+        {
+           "name":"To the Women I Once Loved",
+           "category":"poetry",
+           "auther":"Pierre Alex Jeanty",
+           "price":"43.34$",
+           "published-date":"4/9/2015",
+           "img-url":"images/poetry-images/book-7.jpg",
+           "book-url":"pdf/poetry-pdf/book-7.pdf",
+           "id":"7",
+           "introduction":" a reflection of a poet's heart, his deepest inner feelings towards past relationships and how they contributed to the man he has become."
+        },
+        
+        {
+           "name":"Romeo and Juliet",
+           "category":"poetry",
+           "auther":"William Shakespeare",
+           "price":"30.55$",
+           "published-date":"1/11/1597",
+           "img-url":"images/poetry-images/book-8.jpg",
+           "book-url":"pdf/poetry-pdf/book-8.pdf",
+           "id":"8",
+           "introduction":"two young star-crossed lovers whose deaths ultimately reconcile their feuding families."
+          
+        },
+        {
+           "name":"Hamlet",
+           "category":"poetry",
+           "auther":"William Shakespeare",
+           "price":"40.09$",
+           "published-date":"56,16/2/1603",
+           "img-url":"images/poetry-images/book-9.jpg",
+           "book-url":"pdf/poetry-pdf/book-9.pdf",
+           "id":"9",
+           "introduction":"the story of a prince whose duty to revenge his father's death entangles him in philosophical problems he can't solve"
+        },
+      {
+         "name":"King Lear",
+         "category":"poetry",
+         "auther":"William Shakespeare",
+         "price":"20.25$",
+         "published-date":"16/8/1623",
+         "img-url":"images/poetry-images/book-10.jpg",
+         "book-url":"pdf/poetry-pdf/book-10.pdf",
+         "id":"10",
+         "introduction":" based on the mythological Leir of Britain. King Lear relinquishes his power and land to two of his daughters"
+      }
+],
+     
+         "Fitness":[
+            {
+            "name":"Men's Fitness Complete Guide to Home Workouts",
+            "category":"fitness",
+            "auther":"Men's Fitness",
+            "price":"18.45$",
+            "published-date":"1/1/2011",
+            "img-url":"images/fitness-images/book-1.jpg",
+            "book-url":"pdf/fitness-pdf/book-1.pdf",
+            "id":"1",
+            "introduction":"Get great advice on building muscles using only your bodyweight to define your shape"
+           },{
+           "name":"Healthy Weight Loss— Without Dieting",
+           "category":"fitness",
+           "auther":"George Mateljan",
+           "price":"8.65$",
+           "published-date":"23/2/2019",
+           "img-url":"images/fitness-images/book-2.jpg",
+           "book-url":"pdf/fitness-pdf/book-2.pdf",
+           "id":"2",
+           "introduction":"Train your mind, change your eating habits and start losing weight today!"
+         },
+         {
+        
+           "name":"Genius Foods",
+           "category":"fitness",
+           "auther":"Paul Grewal",
+           "price":"19.36$",
+           "published-date":"20/3/2018",
+           "img-url":"images/fitness-images/book-3.jpg",
+           "book-url":"pdf/fitness-pdf/book-3.pdf",
+           "id":"3",
+           "introduction":"Become Smarter, Happier, and More Productive While Protecting Your Brain for Life"
+        },
+       
+        
+        {
+           "name":"The Nature Fix",
+           "category":"fitness",
+           "auther":"Florence Williams",
+           "price":"17.72$",
+           "published-date":"20/2/2018",
+           "img-url":"images/fitness-images/book-4.jpg",
+           "book-url":"pdf/fitness-pdf/book-4.pdf",
+           "id":"4",
+           "introduction":"Why Nature Makes Us Happier, Healthier, and More Creative "
+        },
+        {
+           "name":"The Complete Guide to Fasting",
+           "category":"fitness",
+           "auther":"Jimmy Moore",
+           "price":"30.47$",
+           "published-date":"1/10/2016",
+           "img-url":"images/fitness-images/book-5.jpg",
+           "book-url":"pdf/fitness-pdf/book-5.pdf",
+           "id":"5",
+           "introduction":"Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting "
+        },
+        
+        {
+           "id-number":"6",
+           "introduction":"Heal Your Body Through Intermittent, Alternate-Day, and Extended Fasting ",
+           "name":"A groundbreaking self-defense and fitness book for women by a ballerina-turned-self-defense expert",
+           "category":"fitness",
+           "auther":"Avital Zeisler",
+           "price":"20.99$",
+           "published-date":"7/4/2015",
+           "img-url":"images/fitness-images/book-6.jpg",
+           "book-url":"pdf/fitness-pdf/book-6.pdf"
+        },
+        
+        {
+           "name":"FITNESS ABCs",
+           "category":"fitness",
+           "auther":"Chuck Krautblatt",
+           "price":"40.69$",
+           "published-date":"14/4/2010",
+           "img-url":"images/fitness-images/book-7.jpg",
+           "book-url":"pdf/fitness-pdf/book-7.pdf",
+           "id":"7",
+           "introduction":"Fitness Training Manual in easy to read format for both trainers and clients. Book includes all necessary forms and charts"
+        },
+       
+        {
+           "name":"Keto Comfort Foods",
+           "category":"fitness",
+           "auther":"Maria Emmerich ",
+           "price":"35.95$",
+           "published-date":"2/5/2017",
+           "img-url":"images/fitness-images/book-8.jpg",
+           "book-url":"pdf/fitness-pdf/book-8.pdf",
+           "id":"8",
+           "introduction":"Family Favorite Recipes Made Low-Carb and Healthy "
+        },
+      {
+         "name":"Sports Nutrition",
+         "category":"fitness",
+         "auther":"Ira Wolinsky and Judy A. Driskell",
+         "price":"58.48$",
+         "published-date":"31/10/2005",
+         "img-url":"images/fitness-images/book-9.jpg",
+         "book-url":"pdf/fitness-pdf/book-9.pdf",
+         "id":"9",
+         "introduction":"Connect Access Card for Williams' Nutrition for Health, Fitness and Sport"
+      },
+      {
+         "name":"The 21-Day Yoga Body",
+         "category":"fitness",
+         "auther":" Ira Wolinsky and Judy A. Driskell",
+         "price":" 15.95$",
+         "published-date":"5/11/2013",
+         "img-url":"images/fitness-images/book-10.jpg",
+         "book-url":"pdf/fitness-pdf/book-10.pdf",
+         "id":"10",
+         "introduction":" A Rejuvenating Lifestyle Program to Help You Feel Younger, Healthier, and Ready to Rock the World! " 
+      }
    ]
    
 }
   
    ]
  }
+
+   
+
+  
+ 
+
+
+
+
+  
+
+
+
+
