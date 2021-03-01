@@ -67,7 +67,9 @@
           "published-date":"30/12/2008",
           "img-url":"../images/self-help/book-6.jpg",
           "book-url":"pdf/self-help/book-6.pdf",
-          "id" : "6"
+          "id" : "6",
+          "introduction": "You can change your moods by learning how to restructure your negative thoughts."
+
        },
        {
           "name":"Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time",
@@ -77,7 +79,8 @@
           "published-date":"30/12/2008",
           "img-url":"../images/self-help/book-7.jpg",
           "book-url":"pdf/self-help/book-7.pdf",
-          "id" : "7"
+          "id" : "7",
+          "introduction": "21 Great Ways to Stop Procrastinating and Get More Done in Less "
        },
        {
           "name":"The 5 AM Club",
@@ -87,7 +90,9 @@
           "published-date":"4/12/2018",
           "img-url":"../images/self-help/book-8.jpg",
           "book-url":"pdf/self-help/book-8.pdf",
-          "id" : "8"
+          "id" : "8",
+          "introduction": "Self-help book, in The 5 AM Club, Robin Sharma tells the story of a fictional artist, an entrepreneur, and a tycoon to explain the benefits of rising early every morning."
+
        },
        {
           "name":"The Miracle Morning",
@@ -97,7 +102,8 @@
           "published-date":"7/12/2012",
           "img-url":"../images/self-help/book-9.jpg",
           "book-url":"pdf/self-help/book-9.pdf",
-          "id" : "9"
+          "id" : "9",
+          "introduction": "How you wake up each day and your morning routine (or lack thereof) dramatically affects your levels of success in every single area of your life."
        },
        {
           "name":"You Are a Badass: How to Stop Doubting Your Greatness and Start Living an Awesome Life",
