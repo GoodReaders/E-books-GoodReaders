@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+:root {
+    --primaryColor: #f09d51;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: "Lato", sans-serif;
+  }
+
+main h2 {
+    margin:5px 15px;
+    font-family:lato;
+}  
+
+img{
+    height: 200px;
+    width: 150px;
+
+}
+.one-book{
+border:1px solid black;
+padding:10px;
+text-align: center;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius: 10px;
+background-color: var(--mainGrey);
+/* width: 200px; */
+height: 430px; 
+display: relative;
+padding-bottom:10%;
+
+}
+
+.bookInfo h6{
+    margin:5px;
+}
+.bookInfo :first-child{
+    font-size:20px ;
+   
+}
+
+.book-Info {
+    margin-bottom: 20px;
+    letter-spacing: var (var(--mainSpacing));
+    line-height: 1.2;
+    position: relative;
+    top:55%;
+    width: 70%;
+    margin:0 auto;
+    padding:0;
+}
+.one-book:hover{
+/* box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.9), 0 25px 60px 0 rgba(0, 0, 0, 0.9); */
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+/* transform: scale(1.1, 1.1); */
+}
+
+/* flipping image */
+
+.flip-card {
+    background-color: transparent;
+    /* width: 300px;
+    height: 300px; */
+    perspective: 1000px;
+    /* width: 100%; */
+    text-align: center;
+    margin:0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin:0;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front {
+      width:200px;
+      height:150px;
+  }
+
+
+
+  .flip-card {
+      display: inline;
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute; 
+    width: 100%; 
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    /* background-color: #bbb; */
+    color: black;
+  }
+
+  /* .flip-card-front img {
+      width:200px;
+      height: 200px;
+  } */
+  
+  .flip-card-back {
+    background-color: var(--mainGrey);
+    color: var (--mainBlack);
+    transform: rotateY(180deg);
+    font-size: 0.6em;
+    letter-spacing: var(--mainSpacing);
+    line-height: 1.5;
+    /* position:absolute;
+    top: 20; */
+    margin-bottom: 30px;
+  }
+  .flip-card-back p {
+      display: block;
+  }
+  /* end of flipping image */ 
+
+.books{
+    width: 90vw;
+    margin: 0 30px;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1rem;
+    padding: 30px 0px;
+}
+h2{
+ padding-left: 10px; 
+ font-size: 50px;  
+}
+
+body{
+    font-size: 20px;
+}
+.one-book a {
+    display: block;
+}
+.read-button{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: var(--primaryColor);
+    font-size: 0.2em;
+
+}
+
+.contains-pdf a.button {
+    font-size: 1em;
+    padding:5px;
+    font-weight:600;
+}
+
+/* Nav bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: rgb(231, 226, 221);
+  z-index: 1;
+}
+.navbar-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+.navbar-center a {
+    text-decoration: none;
+    color: #222;
+}
+.nav-icon {
+  font-size: 1.5rem;
+}
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--primaryColor);
+  padding: 0 5px;
+  border-radius: 30%;
+  color: var(--mainWhite);
+}
+
+/* End nav bar */
+
+/* footer */
+.footer {
+  padding: 3em 3em 0;
+  background: hsl(0, 0%, 10%);
+  color: #FFFCED;
+}
+
+@media screen and (min-width: 50em) {
+  .footer-widgets {
+      -js-display: flex;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .widget {
+      width: 30%;
+  }
+
+}
+
+.widget-title {
+  font-size: 1.3em;
+}
+
+
+
+.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-menu a {
+  display: block;
+  padding-bottom: .5em;
+  color: #FFFCED;
+  text-decoration: none;
+}
+
+.footer-menu a:focus::before,
+.footer-menu a:hover::before {
+  margin-right: .5em;
+  content: "›";
+}
+
+.footer-cta a {
+  display: block;
+  margin-top: 1em;
+  padding: 0 .5em;
+  font-size: 2em;
+  font-weight: 900;
+  color: #fffced;
+  text-align: center;
+  text-decoration: none;
+  border: 5px solid #fffced;
+}
+
+.footer-cta a:focus,
+.footer-cta a:hover {
+  background: var(--primaryColor)
+}
+
+.social-nav {
+  margin: 4em -3em 0;
+  padding: 1em 0;
+  background: var(--mainGrey)
+}
+
+.social-nav ul {
+  -js-display: flex;
+  display: flex;
+  justify-content: center;
+
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-nav a {
+  padding: 1em;
+}
+
+.social-nav svg {
+  width: 1.4em;
+  height: auto;
+
+}
+
+.social-nav path {
+  fill: #FFFCED;
+}
+
+.social-nav ul li a i {
+  font-size: 1.5em;
+  color: var(--mainBlack);
+}
+
+/* footer */
+
