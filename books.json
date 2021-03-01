@@ -413,7 +413,236 @@
          "book-url":"pdf/cookbooks/book-10.pdf",
          "id" : "10"
       }
-   ]
- }
+   ],
+      "Novel":[
+         {
+         "name":"The Vampyre",
+         "category":"novel",
+         "auther":"'John William Polidori'",
+         "price":"20.45$",
+         "published-date":" '1/4/1819'",
+         "img-url":"images/novel/book-1.jpg",
+         "book-url":"pdf/novel/the_vampyre.pdf",
+         "introduction":"A young English gentleman of means, Aubrey, is immediately intrigued by Lord Ruthven, the mysterious newcomer among society's elite. The young man soon discovers a sinister character hidden behind his new friend's glamorous facade.",
+         "id":1
+         
+      },
+      {
+      "name":"'The Man Who Knew Too Much'",
+      "category":"novel",
+      "auther":"'Gilbert Keith Chesterton'",
+      "price":"25.65$",
+      "published-date":"'20/3/1922'",
+      "img-url":"images/novel/book-2.jpg",
+      "book-url":"pdf/novel/the_man_who_knew_too_much.pdf",
+      "introduction":"The Man Who Knew Too Much traces the activities of Horne Fisher and his trusted friend Harold March. Although Horne's keen mind and powerful deductive gifts make him a natural sleuth, his inquiries have a way of developing moral complications.",
+      "id":2
+   },
+   {
+      "name":"The Last of the Mohicans",
+      "category":"novel",
+      "auther":"'James Fenimore Cooper'",
+      "price":"40.36$",
+      "published-date":"'2/1/1826'",
+      "img-url":"images/novel/book-3.jpg",
+      "book-url":"pdf/novel/the_last_of_the_mohicans.pdf",
+      "introduction":"As the French and Indian war rages, the two daughters of a British officer prepare to return home.",
+      "id":3
+   },
+   {
+      "name":"The Little Prince",
+      "category":"novel",
+      "auther":"'Antoine de Saint-Exupéry",
+      "price":"11.72$",
+      "published-date":"6/4/1943",
+      "img-url":"images/novel/book-4.jpg",
+      "book-url":"pdf/novel/the_little_prince.pdf",
+      "introduction":"Moral allegory and spiritual autobiography, The Little Prince is the most translated book in the French language.",
+      "id":4
+   },
+   {
+      "name":"The Three Musketeers",
+      "category":"novel",
+      "auther":"Alexandre Dumas",
+      "price":"24.47$",
+      "published-date":"'13/1/1973",
+      "img-url":"images/novel/book-5.jpg",
+      "book-url":"pdf/novel/the_three_musketeers.pdf",
+      "introduction":"Dumas transforms minor historical figures into larger- than-life characters: the Comte d’Artagnan, an impetuous young man in pursuit of glory; the beguilingly evil seductress “Milady”; the powerful and devious Cardinal Richelieu.",
+      "id":5
+   },
+   {
+      "name":"Madame Bovary",
+      "category":"novel",
+      "auther":"Gustave Flaubert",
+      "price":"11.99$",
+      "published-date":"16/3/1856",
+      "img-url":"images/novel/book-6.jpg",
+      "book-url":"pdf/novel/madame_bovary.pdf",
+      "introduction":"Unanimously considered one of the best novels of all time, Madame Bovary recounts the dark tragedy of Emma Bovary, an unhappily married woman whose dreams cruelly collide with reality.",
+      "id":6
+   },
+   {
+      "name":"The Strange Case of Dr. Jekyll and Mr. haydi",
+      "category":"novel",
+      "auther":"Robert Louis Stevenson",
+      "price":"15.69$",
+      "published-date":"5/6/1886",
+      "img-url":"images/novel/book-7.jpg",
+      "book-url":"pdf/novel/the_strange_case_of_dr_jekyll_and_mr_hyde.pdf",
+      "introduction":"Idealistic young scientist Henry Jekyll struggles to unlock the secrets of the soul. Testing chemicals in his lab, he drinks a mixture he hopes will isolate - and eliminate - human evil. Instead it unleashes the dark forces within him, transforming him into the hideous and murderous Mr. Hyde.",
+      "id":7
+   },
+   {
+      "name":"The Brothers Karamazov",
+      "category":"novel",
+      "auther":"'Fyodor Dostoyevsky' ",
+      "price":"18.95$",
+      "published-date":"1/11/1880",
+      "img-url":"images/novel/book-8.jpg",
+      "book-url":"pdf/novel/the_brothers_karamazov.pdf",
+      "introduction":"The Brothers Karamasov is a murder mystery, a courtroom drama, and an exploration of erotic rivalry in a series of triangular love affairs involving the “wicked and sentimental” Fyodor Pavlovich Karamazov and his three sons―the impulsive and sensual Dmitri.",
+      "id":8
+   },
+   {
+      "name":"Robin Hood",
+      "category":"novel",
+      "auther":"Walter Scott",
+      "price":"12.48$",
+      "published-date":"56,16/2/1883",
+      "img-url":"images/novel/book-9.jpg",
+      "book-url":"pdf/novel/robin_hood_in_english.pdf",
+      "introduction":"Fooled into committing a crime by the king's foresters, young Robin Hood finds himself branded an outlaw. As he takes refuge in Sherwood Forest, he meets other hideaways who also unjustly find themselves on the wrong side of the law. ",
+      "id":9
+
+      
+   },
+   {
+      "name":"The Jacket (The Star-Rover)",
+      "category":"novel",
+      "auther":"Jack London",
+      "price":" 13.95$",
+      "published-date":"16/8/1915",
+      "img-url":"images/novel/book-10.jpg",
+      "book-url":"pdf/novel/the_jacket.pdf",
+      "introduction":"A framing story is told in the first person by Darrell Standing, a university professor serving life imprisonment in San Quentin State Prison for murder.",
+      "id":10
+   }
+   ],
+      "shortStories": [
+         {
+         "name":"Romantic Legends of Spain",
+         "category":"short stories",
+         "auther":"Gustavo Adolfo Bécquer",
+         "price":"20.45$",
+         "published-date":" 14/5/1909",
+         "img-url":"images/Shortstories/book-2.jpg",
+         "book-url":"pdf/short stories/romantic_legends_of_spain.pdf",
+         "introduction":" Well, that is the Marquis of Moscoso, suitor to the widowed Countess of Villapineda. They say that before setting his eyes upon this lady, he had asked in marriage the daughter of a man of large fortune, but hush! Speaking of the devil—do you see that man coming on foot under the...",
+         "id":1
+      },
+      {
+      "name":"The Bet and Other Stories",
+      "category":"short stories",
+      "auther":"Anton Pavlovich Chekhov",
+      "price":"25.65$",
+      "published-date":"6/7/1915",
+      "img-url":"images/Shortstories/book-1.jpg",
+      "book-url":"pdf/short stories/the_bet_and_other_stories.pdf",
+      "introduction":"It was a dark autumn night. The old banker was pacing from corner to corner of his study, recalling to his mind the party he gave in the autumn fifteen years ago. There were many clever people at the party and much interesting conversation.",
+      "id":2
+   },
+   {
+      "name":"The Canterville Ghost",
+      "category":"short stories",
+      "auther":"'Oscar Wilde",
+      "price":"40.36$",
+      "published-date":"2/2/1887",
+      "img-url":"images/Shortstories/book-3.jpg",
+      "book-url":"pdf/short stories/the_canterville_ghost.pdf",
+      "introduction":"This is Oscar Wilde's tale of the American family moved into a British mansion, Canterville Chase, much to the annoyance of its tired ghost. The tale is rich with allusion.",
+      "id":3
+   },
+   {
+      "name":"The Portrait of Mr. W. H",
+      "category":"short stories ",
+      "auther":"Oscar Wilde",
+      "price":"11.72$",
+      "published-date":"6/4/1943",
+      "img-url":"images/Shortstories/book-4.jpg",
+      "book-url":"pdf/short stories/the_portrait_of_mr._w._h_.pdf",
+      "introduction":"an attempt to uncover the identity of Mr. W. H., the enigmatic dedicatee of Shakespeare's Sonnets. It is based on a theory, originated by Thomas Tyrwhitt.",
+      "id":4
+   },
+   {
+      "name":"White Nights",
+      "category":"short stories",
+      "auther":"Fedor Mikhaïlovitch Dostoïevski",
+      "price":"24.47$",
+      "published-date":"'13/1/1973",
+      "img-url":"images/Shortstories/book-5.jpg",
+      "book-url":"pdf/short stories/white_nights.pdf",
+      "introduction":"a story of a young man fighting his inner restlessness. His unnamed protagonist is a sensitive, poetic resident of the very Westernized St. Petersburg of the mid-nineteenth century",
+      "id":5
+   },
+   {
+      "name":"I Don’t Want to Win a Nobel Prize!",
+      "category":"short stories",
+      "auther":"EM Ariza",
+      "price":"11.99$",
+      "published-date":"16/3/1856",
+      "img-url":"images/Shortstories/book-6.jpg",
+      "book-url":"pdf/short stories/em_ariza.pdf",
+      "introduction":" As if Dracula had created the Best Blood Transfusion Award, or Nero the prize for Fire Fighter of the Decade, or Henry VIII for Wife of the Month. Wouldn’t any of these prizes be downright crazy? Well, that’s exactly why I’ve decided that I don’t want to win a Nobel Prize",
+      "id":6
+   },
+   {
+      "name":"A Woman’s Kingdom",
+      "category":"short stories",
+      "auther":"Anton Chekhov",
+      "price":"15.69$",
+      "published-date":"5/6/1886",
+      "img-url":"images/Shortstories/book-7.jpg",
+      "book-url":"pdf/short stories/a_woman_s_kingdom.pdf",
+      "introduction": "A Woman's Kingdom presents the world of Anna Akimovna. She is the rich factory owner whom everyone depends on for work and charity. However, although she has everyone admiring her, she is lonely and unhappy. She longs to marry.",
+      "id":7
+   },
+   {
+      "name":"What Christmas is as We Grow older",
+      "category":"short stories",
+      "auther":"Charles Dickens ",
+      "price":"18.95$",
+      "published-date":"1/11/1880",
+      "img-url":"images/Shortstories/book-8.jpg",
+      "book-url":"pdf/short stories/what_christmas_is_as_we_grow_older.pdf",
+      "introduction":"Published from 1851 to 1853, Household Words featured as its main attraction during the Christmas season a lengthy short story penned by Dickens himself. During these years Dickens’s world view underwent a sea change, from youthful optimism to looming disillusion with the course of human affairs.",
+      "id":8
+   },
+   {
+      "name":"The Gift of the Magi",
+      "category":"short stories",
+      "auther":"O. Henry",
+      "price":"12.48$",
+      "published-date":"56,16/2/1883",
+      "img-url":"images/Shortstories/book9.jpg",
+      "book-url":"pdf/short stories/the_gift_of_the_magi.pdf",
+      "introduction":"One dollar and eight-seven cents is all the money Della has in the world to buy her beloved husband a Christmas present. She has nothing to sell except her only treasure -- her long, beautiful brown hair.",
+      "id":9
+   },
+   {
+      "name":"At Your Age",
+      "category":"short stories",
+      "auther":"F. Scott Fitzgerald",
+      "price":" 13.95$",
+      "published-date":"16/8/1915",
+      "img-url":"images/Shortstories/book-10.jpg",
+      "book-url":"pdf/short stories/at_your_age.pdf",
+      "introduction":"At Your Age, a 1929 short story published in the Saturday Evening Post, contains all the trademark elements that F. Scott Fitzgerald's readers had come to expect by the end of the Jazz Age.",
+      "id":10
+   }
+   
+  ]
+}
+  
    ]
  }
