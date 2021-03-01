@@ -10,3 +10,38 @@
 	} );
 
 })( jQuery );
+
+
+
+let bookElement = document.getElementsByClassName('fas fa-shopping-cart');
+
+
+function Products(name, category,auther,price,publishedDate,imgUrl,bookUrl,introduction,id) {
+    this.name = name;
+   this.category=category;
+   this.auther=auther;
+   this.price=price;
+   this.publishedDate=publishedDate;
+   this.imgUrl=imgUrl;
+   this.bookUrl=bookUrl;
+  this.introduction=introduction;
+  this.id=id;
+    Products.allbooks.push(this);
+    
+
+
+}
+
+Products.allbooks = [];
+
+
+function settingItems(){
+  
+    let data=JSON.stringify(Products.allbooks);
+    localStorage.setItem('book',data);
+   
+   
+}
+
+
+
