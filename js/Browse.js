@@ -1,13 +1,11 @@
 let productDom = document.querySelector(".books");
 
-let categoriesArr=["Self-help", "Cookbooks", "Fitness", "Poetry", "Art", "Noval", "Science", "Short Stories"];
-
 function Products() {
 }
 
 Products.prototype.getProducts = async () => {
     try {
-        let result = await fetch("../books.json");
+        let result = await fetch("../../books.json");
         let data = await result.json();
         let products = data.books;
         products = products[0]['self-help'];
@@ -47,7 +45,7 @@ UI.prototype.displayProducts = function(products) {
         </div>
         <div class="flip-card-back">
         <p>
-        ${product.intr} 
+        ${product.intro} 
         </p> 
         </div>
         </div>
@@ -80,19 +78,9 @@ document.addEventListener("DOMContentLoaded", function()
         ui.displayProducts(products);
         // storage.saveProducts(products);
   
-    })
+    // })
     // then( () => {
     //     ui.getButtons();
-    // });
-    
-} )
-
-// let readPDF = document.getElementsByClassName("contains-pdf")
-// let openBook
-// readPDF.addEventListener("click", onclick);
-
-// function onclick(event){
-//     event.perventDefault();
-//     openBook = Product.getProducts.pdf;
-
-// }
+    });
+     
+} );
