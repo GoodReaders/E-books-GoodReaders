@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 :root {
     --primaryColor: #f09d51;
     --mainWhite: #fff;
@@ -17,6 +18,11 @@
     font-family: "Lato", sans-serif;
   }
 
+main h2 {
+    margin:5px 15px;
+    font-family:lato;
+}  
+
 img{
     height: 200px;
     width: 150px;
@@ -30,8 +36,9 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 border-radius: 10px;
 background-color: var(--mainGrey);
 /* width: 200px; */
-height: 400px; 
+height: 430px; 
 display: relative;
+padding-bottom:10%;
 
 }
 
