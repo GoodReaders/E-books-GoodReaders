@@ -1,28 +1,29 @@
-let productDom = document.querySelector(".books");
-
-let categoriesArr=["Self-help", "Cookbooks", "Fitness", "Poetry", "Art", "Noval", "Science", "Short Stories"];
+let productDom = document.querySelectorAll(".books");
+console.log(productDom);
+let categoriesArr=["self-help", "novel", "short-stories", "cookbooks", "fitness", "poetry", "science", "art"];
 
 function Products() {
 }
 
-Products.prototype.getProducts = async () => {
+Products.prototype.getProducts = async (category) => {
     try {
         let result = await fetch("../books.json");
         let data = await result.json();
         let products = data.books;
-        products = products[0]['self-help'];
+        console.log(products[0][category]);
+        products = products[0][category];
         products = products.map( book => {
             const img = book['img-url'];
             const name = book.name;
             const author = book.author;
             const price = book.price;
-            const publishedDate = book['published=date']
+            const publishedDate = book['published-date']
             const pdf = book['book-url'];
             const intro = book.introduction;
             // const image = book.image-url;
             return {img,name,author,price,publishedDate,pdf,intro};
         })
-        console.log(products);
+        //console.log(products);
         return products;
     } catch (error) {
         console.log(error)
@@ -34,7 +35,7 @@ Products.prototype.getProducts = async () => {
     }
 
 
-UI.prototype.displayProducts = function(products) {
+UI.prototype.displayProducts = function(products,i) {
     let result = "";
     products.forEach( product => {
         result += `
@@ -67,7 +68,7 @@ UI.prototype.displayProducts = function(products) {
         `;
     }); 
 
-    productDom.innerHTML = result;
+    productDom[i].innerHTML = result;
 }
 
 document.addEventListener("DOMContentLoaded", function()
@@ -76,11 +77,17 @@ document.addEventListener("DOMContentLoaded", function()
     const products = new Products();
     // const storage = new Storage();
     // // get all Products
-    products.getProducts().then(function(products) {
-        ui.displayProducts(products);
-        // storage.saveProducts(products);
+    for (let i = 0; i < categoriesArr.length; i++) {
+        
+        products.getProducts(categoriesArr[i]).then(function(products) {
+            ui.displayProducts(products,i);
+            // storage.saveProducts(products);
+        
+        })
+    }
+
+
   
-    })
     // then( () => {
     //     ui.getButtons();
     // });
