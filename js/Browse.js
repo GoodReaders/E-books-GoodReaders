@@ -1,19 +1,30 @@
-let productDom = document.querySelector(".books");
-console.log(productDom);
+const productDom = document.querySelector(".books");
+const addButtons = document.querySelectorAll(".add-button");
+console.log(addButtons);
+
+// cart
+let cart = [];
+// buttons
+let buttonsDom = [];
 
 function Products() {
+
 }
 
+let Allproducts = [];
+let Allnewproducts =[];
+let products;
+let productsforSaving; 
+let savedProducts = [];
 Products.prototype.getandRenderProducts = async () => {
     try {
         let result = await fetch("../../books.json");
         let data = await result.json();
-        let products = data.books;
+        products = data.books;
+        productsforSaving = products[0];
         let categoriesArr=["self-help", "cookbooks", "poetry", "fitness", "Novel", "shortStories", "science", "Art"];
         // let mytest = products[0];
         // console.log(categoriesArr[1]);
-        let Allproducts = [];
-        let Allnewproducts =[];
         for (let i =0;i<categoriesArr.length;i++) {
             Allproducts = products[0][categoriesArr[i]];
                 Allnewproducts = Allproducts.map( book => {
@@ -24,11 +35,12 @@ Products.prototype.getandRenderProducts = async () => {
                 const publishedDate = book['published-date']
                 const pdf = book['book-url'];
                 const intro = book.introduction;
-                return {img,name,author,price,publishedDate,pdf,intro};
-             
+                const id = book.id;
+                return {img,name,author,price,publishedDate,pdf,intro,id}
                 
             })
-            console.log(Allnewproducts)
+            savedProducts.push(Allnewproducts)
+            // console.log(Allnewproducts)
             let result = "";
             Allnewproducts.forEach( product => {
                 result += `
@@ -55,7 +67,7 @@ Products.prototype.getandRenderProducts = async () => {
                 <a href=${product.pdf} class="button">Read as soft copy <i
                 class="fas fa-book-reader"></i></a>
                 </button>
-                <button class="add-button">Add To My Library</button>
+                <button class="add-button" id=${product.id}>Add To Cart</button>
                 </div>
                 </article>
                 `;
@@ -67,22 +79,79 @@ Products.prototype.getandRenderProducts = async () => {
                 // newheading.innerHTML = categoriesArr[i];
                 result = result + `<h2> ${categoriesArr[i]} <h2> `;
                 result+=`<div><div>`
-                console.log(result);
+                // console.log(result);
                 productDom.innerHTML+= result;
 
         }
 
+        console.log(savedProducts);
+
     } catch (error) {
         console.log(error)
     }
+
 }
 
 
+Products.prototype.storage = function() {
+    localStorage.setItem("products",JSON.stringify(savedProducts));
+
+    
+}
+
+Products.prototype.getStorage = function(id) {
+    
+        let retrievedProducts = JSON.parse(localStorage.getItem("products"));
+        console.log(retrievedProducts);
+        return savedProducts.find(product => product.id === id)
+}
+
+getproducts = products.prototype.getStorage();
+console.log(getproducts);
+
+Products.prototype.getbagButtons = ()=> {
+    const buttons = [...document.querySelectorAll(".add-button")]
+    buttonsDom = buttons;
+    buttons.forEach(button => {
+        let id = button.id;
+        let inCart = cart.find(item => item.id ===id);
+        if (inCart) {
+            button.innerText = "In Cart";
+            button.disabled = true;
+            // get product from products
+            let cartItem = this.getStorage();
+            console.log(cartItem);
+            // add product to the cart
+            // save car in local storage
+            // set cart values 
+            // add cart item 
+            // Show the cart 
+
+        } else {
+            button.addEventListener('click',(event)=>{
+                event.target.innerText = "In Cart";
+                event.target.disabled;
+            })
+        }
+        console.log(id);
+
+    })
+    
+}
+
+// function storage() {
+//        // saveProducts = function () {
+
+//     // }
+// }
+ 
 
 document.addEventListener("DOMContentLoaded", function()
 {
     const products = new Products();
-    products.getandRenderProducts();
+    products.getandRenderProducts().then(()=> {
+        products.getbagButtons();
+    })
     // .then(function(products) {
         // storage.saveProducts(products);
   
