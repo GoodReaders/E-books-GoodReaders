@@ -24,13 +24,7 @@ body {
     box-sizing: border-box;
   }
 
-  .cardd{
-    box-shadow: 0 8px 8px black;
-    margin:1px;
-  display: inline-block;
-
-    box-sizing: border-box;
-  }
+  
   
   .about-section {
     padding: 100px;
