@@ -65,16 +65,8 @@ UI.prototype.displayProducts = function(products) {
         </div>
         </article>
         `;
-        
     }); 
     productDom.innerHTML = result;
-    let upper = document.getElementsByClassName('add-button');
-   
-    for( let i=0;i<upper.length;i++){
-        console.log(upper);
-        upper[i].addEventListener('click', addSelectedItemToCart);
-        
-}
 }
 
 document.addEventListener("DOMContentLoaded", function()
@@ -93,15 +85,3 @@ document.addEventListener("DOMContentLoaded", function()
     });
      
 } );
-
-function addSelectedItemToCart(event) {
-  
-    cart.addItem(event.target.items)
-    console.log( cart.addItem(event.target.items));
-    
-    
-    //cart.addItem(event.target.items);
-
-  
-  }
-  
