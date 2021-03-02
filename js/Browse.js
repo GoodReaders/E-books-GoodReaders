@@ -1,13 +1,12 @@
 let productDom = document.querySelector(".books");
 
-// getting the products
 function Products() {
 
 }
 
 Products.prototype.getProducts = async () => {
     try {
-        let result = await fetch("../books.json");
+        let result = await fetch("../../books.json");
         let data = await result.json();
         let products = data.books;
         products = products[0]['self-help'];
@@ -16,7 +15,7 @@ Products.prototype.getProducts = async () => {
             const name = book.name;
             const author = book.author;
             const price = book.price;
-            const publishedDate = book['published=date']
+            const publishedDate = book['published-date']
             const pdf = book['book-url'];
             const intro = book.introduction;
             // const image = book.image-url;
@@ -40,6 +39,7 @@ UI.prototype.displayProducts = function(products) {
     products.forEach( product => {
         result += `
         <article class="one-book">
+<<<<<<< HEAD
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -65,6 +65,33 @@ UI.prototype.displayProducts = function(products) {
                     <button class="add-button">Add To My Library</button>
                 </div>
             </article>
+=======
+        <div class="flip-card">
+        <div class="flip-card-inner">
+        <div class="flip-card-front">
+        <img src=${product.img}
+        alt="Avatar" >
+        </div>
+        <div class="flip-card-back">
+        <p>
+        ${product.intro} 
+        </p> 
+        </div>
+        </div>
+        </div>
+        <div class="book-Info">
+        <h6>${product.name}</h6>
+        <h6>By ${product.author}</h6>
+        <h6>${product.price}</h6>
+        <h6>${product.publishedDate}</h6>
+        <button class="contains-pdf">
+        <a href=${product.pdf} class="button">Read as soft copy <i
+        class="fas fa-book-reader"></i></a>
+        </button>
+        <button class="add-button">Add To My Library</button>
+        </div>
+        </article>
+>>>>>>> fe90349253a38223f02961b71836b3903ab9e220
         `;
     }); 
     productDom.innerHTML = result;
@@ -80,9 +107,15 @@ document.addEventListener("DOMContentLoaded", function()
         ui.displayProducts(products);
         // storage.saveProducts(products);
   
-    })
+    // })
     // then( () => {
     //     ui.getButtons();
+<<<<<<< HEAD
     // });
     
 } )
+=======
+    });
+     
+} );
+>>>>>>> fe90349253a38223f02961b71836b3903ab9e220
