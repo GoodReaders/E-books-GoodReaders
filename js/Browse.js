@@ -95,11 +95,13 @@ Products.prototype.getandRenderProducts = async () => {
 
 }
 
+
 // local Storage
 class Storage {
     static saveProducts(){
         localStorage.setItem("products",JSON.stringify(savedProducts));
     }
+
 
     static getStorage(id) {
 
@@ -109,7 +111,6 @@ class Storage {
         return retrievedspecific.find( product =>parseInt(product.id)===parseInt(id))
 }
 }
-
 // Products.prototype.getStorage = function(id) {
     
        
@@ -169,6 +170,7 @@ Products.prototype.getbagButtons = ()=> {
 
 document.addEventListener("DOMContentLoaded", function()
 {
+
     const products = new Products();
     products.getandRenderProducts().then(()=> {
         Storage.saveProducts()
