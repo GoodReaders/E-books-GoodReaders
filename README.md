@@ -60,7 +60,7 @@ MIT License is used in this project. [License](LICENSE)
 	└── Browse.js
 	└── MyBooks.js
 	└── AboutUs.js
-└── images                				#contains all images
+└── ../images                				#contains all ../images
 	└── CS 
 	└── Science
 	└── History
@@ -84,7 +84,7 @@ books.json | contains books data | [Books.json](Books.json)
 pages | contains all html files | [html pages](./pages) 
 css | contains all styling files | [css](./css)
 js | contains all js files | [js](./js)
-images | contains all images | [images](./images)
+../images | contains all ../images | [../images](./../images)
 
 ## Code Examples 
 
