@@ -49,7 +49,9 @@ function removeBookFromCart(event){
 
     if(event.target.nodeName ==='A'){
         event.target.parentNode.parentNode.parentNode.removeChild(event.target.parentNode.parentNode);
-       // cart.removeBook(/*book name*/)
+        let bookName = event.target.parentNode.children[0].textContent;
+        console.log(bookName);
+        cart.removeBook(bookName)
     }
     cart.saveToLocalStorage();
     renderCart();
@@ -77,14 +79,54 @@ function clearCart() {
 function showCart(){
     let subContainerDiv = document.getElementsByClassName('sub-container');
     for(let i=0; i<cart.books.length; i++) {
-        /*code to render the cart*/
+        // create elements needed
+        let containerDiv = document.getElementById("main-div");
+        let divElement1 = document.createElement('div')
+        let imgElement = document.createElement('img');
+        let divElement2 = document.createElement('div')
+        let h5Element = document.createElement('h5');
+        let h6Element = document.createElement('h6');
+        let aElement = document.createElement('a');
+        
+        // set attributes
+        divElement1.setAttribute('class', 'item');
+        imgElement.setAttribute('src', cart.books[i].bookImg);
+        divElement2.setAttribute('class', 'details');
+        aElement.setAttribute('class', 'remove-btn');
+
+        // set elements' content
+        h5Element.textContent = cart.books[i].bookName;
+        h6Element.textContent = '$' + cart.books[i].bookPrice;
+        aElement.textContent = "remove";
+
+        // append childs
+        divElement2.appendChild(h5Element);
+        divElement2.appendChild(h6Element);
+        divElement2.appendChild(aElement);
+        divElement1.appendChild(imgElement);
+        divElement1.appendChild(divElement2);
+        containerDiv.appendChild(divElement1);
+
     }
 }
 
 function calcTotalPrice() {
    let total = 0;
-   for(let i=0; i<this.books.length; i++) {
-       total += this.books[i].bookPrice;
+   for(let i=0; i<cart.books.length; i++) {
+       total += cart.books[i].bookPrice;
    }
    return total;
 }
+
+( function( $ ) {
+
+	$( '.dropdown-toggle' ).click( function( e ) {
+		var _this = $( this );
+		e.preventDefault();
+		_this.toggleClass( 'toggle-on' );
+		_this.parent().next( '.sub-menu' ).toggleClass( 'toggled-on' );
+		_this.attr( 'aria-expanded', _this.attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
+		_this.html( _this.html() === '<span class="screen-reader-text">Expand child menu</span>' ? '<span class="screen-reader-text">Collapse child menu</span>' : '<span class="screen-reader-text">Expand child menu</span>' );
+	} );
+
+})( jQuery );
