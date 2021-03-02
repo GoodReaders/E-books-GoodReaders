@@ -1,6 +1,7 @@
 let productDom = document.querySelector(".books");
 
 function Products() {
+
 }
 
 Products.prototype.getProducts = async () => {
@@ -26,11 +27,12 @@ Products.prototype.getProducts = async () => {
         console.log(error)
     }
 }
-    // display product
-    function UI() {
-    
-    }
 
+
+// display product
+function UI() {
+
+}
 
 UI.prototype.displayProducts = function(products) {
     let result = "";
@@ -55,21 +57,22 @@ UI.prototype.displayProducts = function(products) {
         <h6>By ${product.author}</h6>
         <h6>${product.price}</h6>
         <h6>${product.publishedDate}</h6>
+        </div>
+        <div class="button-container">
         <button class="contains-pdf">
         <a href=${product.pdf} class="button">Read as soft copy <i
         class="fas fa-book-reader"></i></a>
         </button>
-        <button class="add-button">Add To My Library</button>
-        </div>
+        <br>
+        <button class="add-button">Add To My Library</button></div>
         </article>
         `;
     }); 
-
     productDom.innerHTML = result;
 }
 
 document.addEventListener("DOMContentLoaded", function()
-{
+ {
     const ui = new UI();
     const products = new Products();
     // const storage = new Storage();
