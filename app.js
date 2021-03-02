@@ -13,35 +13,89 @@
 
 
 
-let bookElement = document.getElementsByClassName('fas fa-shopping-cart');
 
-
-function Products(name, category,auther,price,publishedDate,imgUrl,bookUrl,introduction,id) {
-    this.name = name;
-   this.category=category;
-   this.auther=auther;
-   this.price=price;
-   this.publishedDate=publishedDate;
-   this.imgUrl=imgUrl;
-   this.bookUrl=bookUrl;
-  this.introduction=introduction;
-  this.id=id;
-    Products.allbooks.push(this);
-    
-
+// getting the products
+function Products() {
 
 }
 
-Products.allbooks = [];
+Products.prototype.getProducts = async () => {
+    try {
+        let result = await fetch("../books.json");
+        let data = await result.json();
+        let products = data.books;
+        products = products[0]['self-help'];
+        products = products.map( book => {
+            const img = book['img-url'];
+            const name = book.name;
+            const author = book.author;
+            const price = book.price;
+            const publishedDate = book['published=date']
+            const pdf = book['book-url'];
+            const intro = book.introduction;
+            // const image = book.image-url;
+            return {img,name,author,price,publishedDate,pdf,intro};
+        })
+        console.log(products);
+        return products;
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 
-function settingItems(){
+
+const Cart = function (items) {
+    this.items = items;
+  };
   
-    let data=JSON.stringify(Products.allbooks);
-    localStorage.setItem('book',data);
+  Cart.prototype.addItem = function () {
+     let newItem  = new Products();
+     this.items.push(newItem);
+  
+  };
+  
+  Cart.prototype.saveToLocalStorage = function () {
+    localStorage.setItem('cart',JSON.stringify(this.items))
+  };
+  
+  
+  
+  Products();
+
+
+
+
+  let counter=0;
+
+const cart = new Cart([]);
+
+
+
+function handleSubmit(event) {
+  event.preventDefault();
+
    
-   
+
+
+  counter++;
+  addSelectedItemToCart(event);
+  cart.saveToLocalStorage();
+  updateCounter();
+  updateCartPreview();
+
 }
 
+function addSelectedItemToCart(event) {
+  
+  console.log(event.target.quantity.value);
+  
+  cart.addItem(event.target.items);
 
+}
 
+function updateCounter() {
+  let upper = document.getElementsByClassName('.cart-btn');
+  
+  upper.textContent=counter;
+}

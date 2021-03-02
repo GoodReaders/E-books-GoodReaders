@@ -123,7 +123,8 @@
          "published-date":"7/12/2015",
          "img-url":"../images/cookbooks/book-2.jpg",
          "book-url":"pdf/cookbooks/book-2.pdf",
-         "id" : "2"
+         "id" : "2",
+           "introduction":"It was a dark autumn night. The old banker was pacing from corner to corner of his study, recalling to his mind the party he gave in the autumn fifteen years ago. There were many clever people at the party and much interesting conversation."   
       },
       {
          "name":"The Flavor Bible",
@@ -133,7 +134,8 @@
          "published-date":"1/9/2008",
          "img-url":"../images/cookbooks/book-3.jpg",
          "book-url":"pdf/cookbooks/book-3.pdf",
-         "id" : "3"
+         "id" : "3",
+          "introduction":"This is Oscar Wilde's tale of the American family moved into a British mansion, Canterville Chase, much to the annoyance of its tired ghost. The tale is rich with allusion.",
       },
       {
          "name":"Good Housekeeping The Little Book of Baking",
@@ -143,7 +145,8 @@
          "published-date":"2/10/2012",
          "img-url":"../images/cookbooks/book-4.jpg",
          "book-url":"pdf/cookbooks/book-4.pdf",
-         "id" : "4"
+         "id" : "4",
+          "introduction":"an attempt to uncover the identity of Mr. W. H., the enigmatic dedicatee of Shakespeare's Sonnets. It is based on a theory, originated by Thomas Tyrwhitt."
       },
       {
          "name":"The Joy of Gluten-Free, Sugar-Free Baking",
@@ -153,7 +156,8 @@
          "published-date":"14/8/2012",
          "img-url":"../images/cookbooks/book-5.jpg",
          "book-url":"pdf/cookbooks/book-5.pdf",
-         "id" : "5"
+         "id" : "5",
+         "introduction":"a story of a young man fighting his inner restlessness. His unnamed protagonist is a sensitive, poetic resident of the very Westernized St. Petersburg of the mid-nineteenth century"
       },
       {
          "name":"Baking Sourdough Bread",
@@ -173,7 +177,8 @@
          "published-date":"2/5/2017",
          "img-url":"../images/cookbooks/book-7.jpg",
          "book-url":"pdf/cookbooks/book-7.pdf",
-         "id" : "7"
+         "id" : "7",
+          "introduction":" As if Dracula had created the Best Blood Transfusion Award, or Nero the prize for Fire Fighter of the Decade, or Henry VIII for Wife of the Month. Wouldn’t any of these prizes be downright crazy? Well, that’s exactly why I’ve decided that I don’t want to win a Nobel Prize"
       },
       {
          "name":"Healthy Indian Vegetarian Cooking",
@@ -183,7 +188,8 @@
          "published-date":"4/6/2013",
          "img-url":"../images/cookbooks/book-8.jpg",
          "book-url":"pdf/cookbooks/book-8.pdf",
-         "id" : "8"
+         "id" : "8",
+          "introduction":"Published from 1851 to 1853, Household Words featured as its main attraction during the Christmas season a lengthy short story penned by Dickens himself. During these years Dickens’s world view underwent a sea change, from youthful optimism to looming disillusion with the course of human affairs."
       },
       {
          "name":"Fine Cooking Italian",
@@ -193,7 +199,8 @@
          "published-date":"17/6/2012",
          "img-url":"../images/cookbooks/book-9.jpg",
          "book-url":"pdf/cookbooks/book-9.pdf",
-         "id" : "9"
+         "id" : "9",
+          "introduction":"One dollar and eight-seven cents is all the money Della has in the world to buy her beloved husband a Christmas present. She has nothing to sell except her only treasure -- her long, beautiful brown hair."
       },
       {
          "name":"Fine Cooking Comfort Food",
@@ -203,7 +210,8 @@
          "published-date":"8/11/2011",
          "img-url":"../images/cookbooks/book-10.jpg",
          "book-url":"pdf/cookbooks/book-10.pdf",
-         "id" : "10"
+         "id" : "10",
+          "introduction":"At Your Age, a 1929 short story published in the Saturday Evening Post, contains all the trademark elements that F. Scott Fitzgerald's readers had come to expect by the end of the Jazz Age."
       }
      ],
         "poetry": [
