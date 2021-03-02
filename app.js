@@ -82,20 +82,20 @@ function handleSubmit(event) {
   addSelectedItemToCart(event);
   cart.saveToLocalStorage();
   updateCounter();
-  updateCartPreview();
+  
 
 }
 
-function addSelectedItemToCart(event) {
-  
-  console.log(event.target.quantity.value);
-  
-  cart.addItem(event.target.items);
 
-}
 
 function updateCounter() {
-  let upper = document.getElementsByClassName('.cart-btn');
+  let upper = document.getElementsByClassName('add-button');
+  
+
   
   upper.textContent=counter;
 }
+
+
+
+
