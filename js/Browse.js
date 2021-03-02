@@ -1,6 +1,7 @@
 let productDom = document.querySelector(".books");
 
 function Products() {
+
 }
 
 Products.prototype.getProducts = async () => {
@@ -26,11 +27,12 @@ Products.prototype.getProducts = async () => {
         console.log(error)
     }
 }
-    // display product
-    function UI() {
-    
-    }
 
+
+// display product
+function UI() {
+
+}
 
 UI.prototype.displayProducts = function(products) {
     let result = "";
@@ -64,12 +66,11 @@ UI.prototype.displayProducts = function(products) {
         </article>
         `;
     }); 
-
     productDom.innerHTML = result;
 }
 
 document.addEventListener("DOMContentLoaded", function()
-{
+ {
     const ui = new UI();
     const products = new Products();
     // const storage = new Storage();
