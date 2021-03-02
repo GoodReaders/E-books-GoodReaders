@@ -37,7 +37,7 @@ border-radius: 10px;
 background-color: var(--mainGrey);
 /* width: 200px; */
 height: 430px; 
-display: relative;
+position: relative;
 padding-bottom:10%;
 
 }
@@ -180,9 +180,7 @@ a.button {
     font-size: 1em;
     padding:5px;
     font-weight:600;
-<<<<<<< HEAD
-}
-=======
+
 }
 
 /* footer */
@@ -283,8 +281,3 @@ a.button {
 
 /* footer */
 
-<<<<<<< HEAD
->>>>>>> fb56170b8a58b5d2a71c713e0c60326789b779c6
-=======
->>>>>>> fe90349253a38223f02961b71836b3903ab9e220
->>>>>>> main

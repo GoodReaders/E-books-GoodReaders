@@ -57,12 +57,14 @@ UI.prototype.displayProducts = function(products) {
         <h6>By ${product.author}</h6>
         <h6>${product.price}</h6>
         <h6>${product.publishedDate}</h6>
+        </div>
+        <div class="button-container">
         <button class="contains-pdf">
         <a href=${product.pdf} class="button">Read as soft copy <i
         class="fas fa-book-reader"></i></a>
         </button>
-        <button class="add-button">Add To My Library</button>
-        </div>
+        <br>
+        <button class="add-button">Add To My Library</button></div>
         </article>
         `;
     }); 
