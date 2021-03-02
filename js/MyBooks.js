@@ -46,15 +46,12 @@ divContainer.addEventListener('click', removeBookFromCart);
 function removeBookFromCart(event){
     event.preventDefault();
     let itemDom = document.querySelectorAll("item");
-    console.log(event.target.nodeName);
+
     if(event.target.nodeName ==='A'){
-        console.log(event.target.parentNode.parentNode);
         event.target.parentNode.parentNode.parentNode.removeChild(event.target.parentNode.parentNode);
-        console.log(event.target);
-        //siblings
-        cart.removeBook(/*book name*/)
+       // cart.removeBook(/*book name*/)
     }
-    // cart.saveToLocalStorage();
+    cart.saveToLocalStorage();
     renderCart();
 }
 
@@ -82,4 +79,12 @@ function showCart(){
     for(let i=0; i<cart.books.length; i++) {
         /*code to render the cart*/
     }
+}
+
+function calcTotalPrice() {
+   let total = 0;
+   for(let i=0; i<this.books.length; i++) {
+       total += this.books[i].bookPrice;
+   }
+   return total;
 }
