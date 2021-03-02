@@ -1,7 +1,6 @@
 const productDom = document.querySelector(".books");
-const addButtons = document.querySelectorAll(".add-button");
-console.log(addButtons);
-
+let cartcounter = document.querySelector(".cart-items")
+let cartTotal = document.querySelector(".cart-total")
 // cart
 let cart = [];
 // buttons
@@ -64,7 +63,7 @@ Products.prototype.getandRenderProducts = async () => {
                 <div class="book-Info">
                 <h6>${product.name}</h6>
                 <h6>By ${product.author}</h6>
-                <h6>${product.price}</h6>
+                <h6>$${product.price}</h6>
                 <h6>${product.publishedDate}</h6>
                 <button class="contains-pdf">
                 <a href=${product.pdf} class="button">Read as soft copy <i
@@ -108,6 +107,10 @@ class Storage {
 
         return retrievedspecific.find( product =>parseInt(product.id)===parseInt(id))
 }
+    static saveCart (cart) {
+        localStorage.setItem("cart",JSON.stringify(cart))
+    }
+
 }
 
 // Products.prototype.getStorage = function(id) {
@@ -125,6 +128,22 @@ class Storage {
 // getproducts = products.prototype.getStorage();
 // console.log(getproducts);
 
+function Cart() {
+
+    this.setCartValues= function(){
+        let tempTotal = 0;
+        let itemsTotal =0;
+        cart.map(item => {
+            tempTotal+=item.price*item.amount;
+            itemsTotal+=item.amount
+        })
+        cartTotal.innerText = tempTotal.toFixed(2);
+        cartcounter.innerText=itemsTotal;
+        console.log(cartcounter,cartTotal);
+    }
+
+}
+
 let id;
 Products.prototype.getbagButtons = ()=> {
     const buttons = [...document.querySelectorAll(".add-button")]
@@ -141,12 +160,18 @@ Products.prototype.getbagButtons = ()=> {
             event.target.innerText = "In Cart";
             event.target.disabled =true;
             // get product from products
-            let cartItem = Storage.getStorage(id);
+            let cartItem = {...Storage.getStorage(id),amount:1};
             console.log(cartItem); // return an object 
             // add product to the cart
-            // save car in local storage
+            cart = [...cart,cartItem];
+            console.log(cart);
+            // save cart in local storage
+            Storage.saveCart(cart);
             // set cart values 
+            cartInstorage = new Cart
+            cartInstorage.setCartValues(cart);
             // add cart item 
+            
             // Show the cart 
 
         
