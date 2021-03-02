@@ -35,13 +35,16 @@ Products.prototype.getandRenderProducts = async () => {
                 const publishedDate = book['published-date']
                 const pdf = book['book-url'];
                 const intro = book.introduction;
-                const id = book.id;
-                return {img,name,author,price,publishedDate,pdf,intro,id}
+                const id = parseInt(book.id)+(i*10);
+                savedProducts.push({img,name,author,price,publishedDate,pdf,intro,id});
+                return {img,name,author,price,publishedDate,pdf,intro,id};
+
                 
             })
-            savedProducts.push(Allnewproducts)
-            // console.log(Allnewproducts)
+           
             let result = "";
+            result = result + `<h2> ${categoriesArr[i]} <h2> `;
+            result+=`<div class="book-grid">`
             Allnewproducts.forEach( product => {
                 result += `
                 <article class="one-book">
@@ -73,17 +76,17 @@ Products.prototype.getandRenderProducts = async () => {
                 `;
                 
             }
+            
                 )
                 // let newheading = document.createElement('h2');
                 // productDom.appendChild(newheading);
                 // newheading.innerHTML = categoriesArr[i];
-                result = result + `<h2> ${categoriesArr[i]} <h2> `;
-                result+=`<div><div>`
+                result+= `<div>`
+                
                 // console.log(result);
                 productDom.innerHTML+= result;
 
         }
-
         console.log(savedProducts);
 
     } catch (error) {
@@ -92,48 +95,66 @@ Products.prototype.getandRenderProducts = async () => {
 
 }
 
+// local Storage
+class Storage {
+    static saveProducts(){
+        localStorage.setItem("products",JSON.stringify(savedProducts));
+    }
 
-Products.prototype.storage = function() {
-    localStorage.setItem("products",JSON.stringify(savedProducts));
+    static getStorage(id) {
 
-    
+        let retrievedspecific = JSON.parse(localStorage.getItem("products"));
+        console.log(retrievedspecific);
+
+        return retrievedspecific.find( product =>parseInt(product.id)===parseInt(id))
+}
 }
 
-Products.prototype.getStorage = function(id) {
+// Products.prototype.getStorage = function(id) {
     
-        let retrievedProducts = JSON.parse(localStorage.getItem("products"));
-        console.log(retrievedProducts);
-        return savedProducts.find(product => product.id === id)
-}
+       
+//         console.log(retrievedProducts);
+      
+// }
 
-getproducts = products.prototype.getStorage();
-console.log(getproducts);
+// function getStorage(id) {
+//         let retrievedProducts = JSON.parse(localStorage.getItem("products"));
+//         console.log(retrievedProducts);
+//         return retrievedProducts.find(product => product.id === id)
+// }
+// getproducts = products.prototype.getStorage();
+// console.log(getproducts);
 
+let id;
 Products.prototype.getbagButtons = ()=> {
     const buttons = [...document.querySelectorAll(".add-button")]
     buttonsDom = buttons;
+    console.log(buttons);
     buttons.forEach(button => {
-        let id = button.id;
+        id = button.id;
         let inCart = cart.find(item => item.id ===id);
         if (inCart) {
             button.innerText = "In Cart";
             button.disabled = true;
+        } 
+            button.addEventListener('click',(event)=>{
+            event.target.innerText = "In Cart";
+            event.target.disabled =true;
             // get product from products
-            let cartItem = this.getStorage();
-            console.log(cartItem);
+            let cartItem = Storage.getStorage(id);
+            console.log(cartItem); // return an object 
             // add product to the cart
             // save car in local storage
             // set cart values 
             // add cart item 
             // Show the cart 
 
-        } else {
-            button.addEventListener('click',(event)=>{
-                event.target.innerText = "In Cart";
-                event.target.disabled;
-            })
-        }
-        console.log(id);
+        
+       
+        })
+          
+        
+        // console.log(id);
 
     })
     
@@ -150,8 +171,12 @@ document.addEventListener("DOMContentLoaded", function()
 {
     const products = new Products();
     products.getandRenderProducts().then(()=> {
+        Storage.saveProducts()
+        // products.getbagButtons();
+    }).then(()=> {
         products.getbagButtons();
     })
+} )
     // .then(function(products) {
         // storage.saveProducts(products);
   
@@ -160,4 +185,4 @@ document.addEventListener("DOMContentLoaded", function()
     //     ui.getButtons();
     // });
      
-} );
+
