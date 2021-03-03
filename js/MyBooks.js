@@ -3,28 +3,16 @@ const Cart = function (books) {
     this.books = books;
 }
 
-// Add book to the cart
-Cart.prototype.addBook = function(bookName, bookImg, bookPrice) {
-    let newBook = new CartBook(bookName, bookImg, bookPrice);
-    this.books.push(newBook)
-}
-
 // remove book from the cart
 Cart.prototype.removeBook = function (bookName) {
     let bookIndex;
     for(let i=0; i<this.books.length; i++) {
-      if(this.books[i].bookName == bookName) {
+      if(this.books[i].name == bookName) {
         bookIndex = i;
         break;
       }
     }
     this.books.splice(bookIndex, 1);
-}
-// constructor function for the cart book
-let CartBook = function(bookName, bookImg, bookPrice) {
-    this.bookName = bookName;
-    this.bookImg = bookImg;
-    this.bookPrice = bookPrice;
 }
 
 let cart;
@@ -39,7 +27,7 @@ function removeBookFromCart(event){
     if(event.target.nodeName ==='A'){
         console.log('deleting node!', event.target.parentNode.parentNode);
         let bookName = event.target.parentNode.children[0].textContent; 
-        event.target.parentNode.parentNode.parentNode.removeChild(event.target.parentNode.parentNode); 
+        console.log(bookName, 'book name')
         cart.removeBook(bookName);
         
         saveToLocalStorage();
@@ -56,7 +44,7 @@ function updateCounter() {
 
 // save carts' books in the local storage
 function saveToLocalStorage() {
-    localStorage.setItem('cart',JSON.stringify(cart.books))
+    localStorage.setItem('cart',JSON.stringify(cart.books));
 }
 
 // render all books from the cart onto the page
@@ -73,7 +61,7 @@ function loadCart(){
 }
 
 function clearCart() {
-    let subContainerDiv = document.getElementsByClassName("sub-container");
+    let subContainerDiv = document.getElementById("main-div");;
     subContainerDiv.textContent = "";                               
 }
 
