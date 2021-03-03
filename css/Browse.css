@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+/* @import url("https://fonts.googleapis.com/css?family=Lato:400,700"); */
 :root {
     --primaryColor: #f09d51;
     --mainWhite: #fff;
@@ -15,8 +15,18 @@
   body {
     color: var(--mainBlack);
     background: var(--mainWhite);
-    font-family: "Lato", sans-serif;
+    font-family: 'Vollkorn', serif;
   }
+#self-help{
+  position: relative;
+  margin: 40px;
+  left: 100px;
+}
+h4{
+  position: relative;
+  font-size: 30px;
+
+}
 
 img{
     height: 200px;
@@ -35,7 +45,6 @@ text-align: center;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 border-radius: 10px;
 background-color: var(--mainGrey);
-/* width: 200px; */
 height: 430px; 
 position: relative;
 padding-bottom:10%;
@@ -71,19 +80,14 @@ padding-bottom:10%;
     padding:0;
 }
 .one-book:hover{
-/* box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.9), 0 25px 60px 0 rgba(0, 0, 0, 0.9); */
 box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-/* transform: scale(1.1, 1.1); */
 }
 
 /* flipping image */
 
 .flip-card {
     background-color: transparent;
-    /* width: 300px;
-    height: 300px; */
     perspective: 1000px;
-    /* width: 100%; */
     text-align: center;
     margin:0;
   }
@@ -96,7 +100,6 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     transition: transform 0.6s;
     transform-style: preserve-3d;
     margin:0;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
   }
   
   .flip-card:hover .flip-card-inner {
@@ -126,11 +129,6 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     /* background-color: #bbb; */
     color: black;
   }
-
-  /* .flip-card-front img {
-      width:200px;
-      height: 200px;
-  } */
   
   .flip-card-back {
     background-color: var(--mainGrey);
@@ -147,17 +145,6 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       display: block;
   }
   /* end of flipping image */ 
-/* 
-.books{
-    width: 90vw;
-    margin: 0 30px;
-    max-width: 1170px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1rem;
-    padding: 30px 0px;
-} */
 
 .book-grid {
   width: 90vw;
@@ -170,12 +157,6 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   padding: 30px 0px;
 
 }
-
-/* h2{
- padding-left: 10px; 
- font-size: 50px;  
-} */
-
 body{
     font-size: 20px;
 }
@@ -229,6 +210,7 @@ a.button {
   padding: 3em 3em 0;
   background: hsl(0, 0%, 10%);
   color: #FFFCED;
+
 }
 
 @media screen and (min-width: 50em) {
@@ -247,9 +229,6 @@ a.button {
 .widget-title {
   font-size: 1.3em;
 }
-
-
-
 .footer-menu ul {
   margin: 0;
   padding: 0;
@@ -321,8 +300,6 @@ a.button {
 }
 
 /* footer */
-
-<<<<<<< HEAD
 
 /* Nav bar */
 .navbar {
@@ -570,3 +547,8 @@ a.button {
 }
 
 /* --------------- End of Cart ---------------- */
+  
+.navbar-center a img {
+  height: 75px;
+  width: 100px;
+}
