@@ -1,6 +1,6 @@
 const productDom = document.querySelector(".books");
-let cartcounter = document.querySelector(".cart-items")
-let cartTotal = document.querySelector(".cart-total")
+let cartcounter = document.querySelector(".cart-items");
+let cartTotal = document.querySelector(".cart-total");
 // cart
 let cart = [];
 // buttons
@@ -14,14 +14,14 @@ let Allnewproducts = [];
 let products;
 let productsforSaving;
 let savedProducts = [];
-Products.prototype.getandRenderProducts = async () => {
+Products.prototype.getandRenderProducts = async() => {
     try {
         let result = await fetch("../../books.json");
         let data = await result.json();
         products = data.books;
         productsforSaving = products[0];
         let categoriesArr = ["self-help", "cookbooks", "poetry", "fitness", "Novel", "shortStories", "science", "Art"];
-       
+
         for (let i = 0; i < categoriesArr.length; i++) {
             Allproducts = products[0][categoriesArr[i]];
             Allnewproducts = Allproducts.map(book => {
@@ -42,7 +42,7 @@ Products.prototype.getandRenderProducts = async () => {
             result += `<div class="book-grid">`
             Allnewproducts.forEach(product => {
 
-                result += `
+                    result += `
         <article class="one-book">
         <div class="flip-card">
         <div class="flip-card-inner">
@@ -76,10 +76,10 @@ Products.prototype.getandRenderProducts = async () => {
 
 
 
-            }
+                }
 
             )
-            
+
             result += `<div>`
             productDom.innerHTML += result;
 
@@ -110,7 +110,7 @@ class Storage {
 
 function Cart() {
 
-    this.setCartValues = function () {
+    this.setCartValues = function() {
         let tempTotal = 0;
         let itemsTotal = 0;
         cart.map(item => {
@@ -119,6 +119,7 @@ function Cart() {
         })
         cartTotal.innerText = tempTotal.toFixed(2);
         cartcounter.innerText = itemsTotal;
+        console.log(cartcounter);
     }
 }
 
@@ -139,7 +140,7 @@ Products.prototype.getbagButtons = () => {
             event.target.innerText = "In Cart";
             event.target.disabled = true;
             // get product from products
-            let cartItem = { ...Storage.getStorage(button.id), amount: 1 };
+            let cartItem = {...Storage.getStorage(button.id), amount: 1 };
 
             // add product to the cart
             cart = [...cart, cartItem];
@@ -154,7 +155,7 @@ Products.prototype.getbagButtons = () => {
     })
 
 }
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     const products = new Products();
     products.getandRenderProducts().then(() => {
         Storage.saveProducts()
@@ -162,5 +163,3 @@ document.addEventListener("DOMContentLoaded", function () {
         products.getbagButtons();
     })
 })
-
-
