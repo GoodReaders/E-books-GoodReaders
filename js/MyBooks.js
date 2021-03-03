@@ -1,29 +1,7 @@
-'use strict';
-
 // cart constructor function
-const Cart = function () {
-    this.books = [];
+const Cart = function (books) {
+    this.books = books;
 }
-// constructor function for the cart book
-const CartBook = function(bookName, bookImg, bookPrice) {
-    this.bookName = bookName;
-    this.bookImg = bookImg;
-    this.bookPrice = bookPrice;
-}
-
-
-// declare a cart variable
-let cart = new Cart();
-
-let book1 = new CartBook("xxx", "../images/Art/book-1.jpg", 25);
-let book2 = new CartBook("yyy", "../images/Art/book-2.jpg", 13);
-let book3 = new CartBook("zzz", "../images/Art/book-3.jpg", 50);
-let book4 = new CartBook("www", "../images/Art/book-4.jpg", 43);
-cart.books.push(book1);
-cart.books.push(book2);
-cart.books.push(book3);
-cart.books.push(book4);
-saveToLocalStorage();
 
 // Add book to the cart
 Cart.prototype.addBook = function(bookName, bookImg, bookPrice) {
@@ -42,31 +20,43 @@ Cart.prototype.removeBook = function (bookName) {
     }
     this.books.splice(bookIndex, 1);
 }
-
-// save carts' books in the local storage
-function saveToLocalStorage() {
-    localStorage.setItem('cart',JSON.stringify(cart.books))
+// constructor function for the cart book
+let CartBook = function(bookName, bookImg, bookPrice) {
+    this.bookName = bookName;
+    this.bookImg = bookImg;
+    this.bookPrice = bookPrice;
 }
 
-//let totalprices = calcTotalPrice();
-
+let cart;
 
 // Handel the event of clicking on remove link
 let divContainer = document.getElementById("main-div");
 divContainer.addEventListener('click', removeBookFromCart);
 
+
 function removeBookFromCart(event){
+    event.preventDefault();
     if(event.target.nodeName ==='A'){
         let bookName = event.target.parentNode.children[0].textContent; 
-        event.target.parentNode.parentNode.parentNode.removeChild(event.target.parentNode.parentNode);
-        
+        event.target.parentNode.parentNode.parentNode.removeChild(event.target.parentNode.parentNode); 
         cart.removeBook(bookName);
+        
         saveToLocalStorage();
+        updateCounter();
         renderCart();
     }
 }
 
+// update cart counter
+function updateCounter() {
+    let counter = document.getElementById('cart-items');
+    counter.textContent = cart.books.length;
+}
 
+// save carts' books in the local storage
+function saveToLocalStorage() {
+    localStorage.setItem('cart',JSON.stringify(cart.books))
+}
 
 // render all books from the cart onto the page
 function renderCart(){
@@ -77,7 +67,7 @@ function renderCart(){
 
 function loadCart(){
     const cartBooks = JSON.parse(localStorage.getItem('cart')) || [];
-    cart = new Cart(cartBooks);
+    cart= new Cart(cartBooks);
 }
 
 function clearCart() {
@@ -116,17 +106,22 @@ function showCart(){
         divElement1.appendChild(divElement2);
         containerDiv.appendChild(divElement1);
     }
+
     let pElement = document.getElementById('total');
-    pElement.textContent = "Total Price: $" + totalPrice;
+    if(cart.books.length == 0) {
+        pElement.textContent = "Your cart is Empty!"
+    } else {
+        pElement.textContent = "Total Price: $" + totalPrice;
+    }
 }
 
 function calcTotalPrice() {
-    let total = 1;
+    let total = 0;
    for(let i=0; i<cart.books.length; i++) {
+       console.log(cart.books[i].bookPrice);
        total += cart.books[i].bookPrice;
    }
    return total;
 }
 
-
-showCart();
+renderCart();
