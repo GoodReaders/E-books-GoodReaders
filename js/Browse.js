@@ -1,86 +1,215 @@
-let productDom = document.querySelector(".books");
+const productDom = document.querySelector(".books");
+let cartcounter = document.querySelector(".cart-items")
+let cartTotal = document.querySelector(".cart-total")
+// cart
+let cart = [];
+// buttons
+let buttonsDom = [];
 
 function Products() {
+
 }
 
-Products.prototype.getProducts = async () => {
+let Allproducts = [];
+let Allnewproducts =[];
+let products;
+let productsforSaving; 
+let savedProducts = [];
+Products.prototype.getandRenderProducts = async () => {
     try {
         let result = await fetch("../../books.json");
         let data = await result.json();
-        let products = data.books;
-        products = products[0]['self-help'];
-        products = products.map( book => {
-            const img = book['img-url'];
-            const name = book.name;
-            const author = book.author;
-            const price = book.price;
-            const publishedDate = book['published-date']
-            const pdf = book['book-url'];
-            const intro = book.introduction;
-            // const image = book.image-url;
-            return {img,name,author,price,publishedDate,pdf,intro};
-        })
-        console.log(products);
-        return products;
+        products = data.books;
+        productsforSaving = products[0];
+        let categoriesArr=["self-help", "cookbooks", "poetry", "fitness", "Novel", "shortStories", "science", "Art"];
+        // let mytest = products[0];
+        // console.log(categoriesArr[1]);
+        for (let i =0;i<categoriesArr.length;i++) {
+            Allproducts = products[0][categoriesArr[i]];
+                Allnewproducts = Allproducts.map( book => {
+                const img = book['img-url'];
+                const name = book.name;
+                const author = book.author;
+                const price = book.price;
+                const publishedDate = book['published-date']
+                const pdf = book['book-url'];
+                const intro = book.introduction;
+                const id = parseInt(book.id)+(i*10);
+                savedProducts.push({img,name,author,price,publishedDate,pdf,intro,id});
+                return {img,name,author,price,publishedDate,pdf,intro,id};
+
+                
+            })
+           
+            let result = "";
+            result = result + `<h2> ${categoriesArr[i]} <h2> `;
+            result+=`<div class="book-grid">`
+            Allnewproducts.forEach( product => {
+                result += `
+                <article class="one-book">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src=${product.img}
+                alt="Avatar" >
+                </div>
+                <div class="flip-card-back">
+                <p>
+                ${product.intro} 
+                </p> 
+                </div>
+                </div>
+                </div>
+                <div class="book-Info">
+                <h6>${product.name}</h6>
+                <h6>By ${product.author}</h6>
+                <h6>$${product.price}</h6>
+                <h6>${product.publishedDate}</h6>
+                <button class="contains-pdf">
+                <a href=${product.pdf} class="button">Read as soft copy <i
+                class="fas fa-book-reader"></i></a>
+                </button>
+                <button class="add-button" id=${product.id}>Add To Cart</button>
+                </div>
+                </article>
+                `;
+                
+            }
+            
+                )
+                // let newheading = document.createElement('h2');
+                // productDom.appendChild(newheading);
+                // newheading.innerHTML = categoriesArr[i];
+                result+= `<div>`
+                
+                // console.log(result);
+                productDom.innerHTML+= result;
+
+        }
+        console.log(savedProducts);
+
     } catch (error) {
         console.log(error)
     }
+
 }
-    // display product
-    function UI() {
-    
+
+
+// local Storage
+class Storage {
+    static saveProducts(){
+        localStorage.setItem("products",JSON.stringify(savedProducts));
     }
 
 
-UI.prototype.displayProducts = function(products) {
-    let result = "";
-    products.forEach( product => {
-        result += `
-        <article class="one-book">
-        <div class="flip-card">
-        <div class="flip-card-inner">
-        <div class="flip-card-front">
-        <img src=${product.img}
-        alt="Avatar" >
-        </div>
-        <div class="flip-card-back">
-        <p>
-        ${product.intro} 
-        </p> 
-        </div>
-        </div>
-        </div>
-        <div class="book-Info">
-        <h6>${product.name}</h6>
-        <h6>By ${product.author}</h6>
-        <h6>${product.price}</h6>
-        <h6>${product.publishedDate}</h6>
-        <button class="contains-pdf">
-        <a href=${product.pdf} class="button">Read as soft copy <i
-        class="fas fa-book-reader"></i></a>
-        </button>
-        <button class="add-button">Add To My Library</button>
-        </div>
-        </article>
-        `;
-    }); 
+    static getStorage(id) {
 
-    productDom.innerHTML = result;
+        let retrievedspecific = JSON.parse(localStorage.getItem("products"));
+        console.log(retrievedspecific);
+
+        return retrievedspecific.find( product =>parseInt(product.id)===parseInt(id))
 }
+    static saveCart (cart) {
+        localStorage.setItem("cart",JSON.stringify(cart))
+    }
+
+}
+// Products.prototype.getStorage = function(id) {
+    
+       
+//         console.log(retrievedProducts);
+      
+// }
+
+// function getStorage(id) {
+//         let retrievedProducts = JSON.parse(localStorage.getItem("products"));
+//         console.log(retrievedProducts);
+//         return retrievedProducts.find(product => product.id === id)
+// }
+// getproducts = products.prototype.getStorage();
+// console.log(getproducts);
+
+function Cart() {
+
+    this.setCartValues= function(){
+        let tempTotal = 0;
+        let itemsTotal =0;
+        cart.map(item => {
+            tempTotal+=item.price*item.amount;
+            itemsTotal+=item.amount
+        })
+        cartTotal.innerText = tempTotal.toFixed(2);
+        cartcounter.innerText=itemsTotal;
+        console.log(cartcounter,cartTotal);
+    }
+
+}
+
+let id;
+Products.prototype.getbagButtons = ()=> {
+    const buttons = [...document.querySelectorAll(".add-button")]
+    buttonsDom = buttons;
+    console.log(buttons);
+    buttons.forEach(button => {
+        id = button.id;
+        let inCart = cart.find(item => item.id ===id);
+        if (inCart) {
+            button.innerText = "In Cart";
+            button.disabled = true;
+        } 
+            button.addEventListener('click',(event)=>{
+            event.target.innerText = "In Cart";
+            event.target.disabled =true;
+            // get product from products
+            let cartItem = {...Storage.getStorage(id),amount:1};
+            console.log(cartItem); // return an object 
+            // add product to the cart
+            cart = [...cart,cartItem];
+            console.log(cart);
+            // save cart in local storage
+            Storage.saveCart(cart);
+            // set cart values 
+            cartInstorage = new Cart
+            cartInstorage.setCartValues(cart);
+            // add cart item 
+            
+            // Show the cart 
+
+        
+       
+        })
+          
+        
+        // console.log(id);
+
+    })
+    
+}
+
+// function storage() {
+//        // saveProducts = function () {
+
+//     // }
+// }
+ 
 
 document.addEventListener("DOMContentLoaded", function()
 {
-    const ui = new UI();
+
     const products = new Products();
-    // const storage = new Storage();
-    // // get all Products
-    products.getProducts().then(function(products) {
-        ui.displayProducts(products);
+    products.getandRenderProducts().then(()=> {
+        Storage.saveProducts()
+        // products.getbagButtons();
+    }).then(()=> {
+        products.getbagButtons();
+    })
+} )
+    // .then(function(products) {
         // storage.saveProducts(products);
   
     // })
     // then( () => {
     //     ui.getButtons();
-    });
+    // });
      
-} );
+
