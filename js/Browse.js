@@ -42,38 +42,43 @@ Products.prototype.getandRenderProducts = async () => {
             })
 
             let result = "";
-
-            result = result + `<h2> ${categoriesArr[i]} <h2> `;
-            result += `<div class="book-grid">`
-            Allnewproducts.forEach(product => {
+            result = result + `<h4 class="category"> ${categoriesArr[i]} <h4> `;
+            result+=`<div class="book-grid">`
+            Allnewproducts.forEach( product => {
+                
                 result += `
-                <article class="one-book">
-                <div class="flip-card">
-                <div class="flip-card-inner">
-                <div class="flip-card-front">
-                <img src=${product.img}
-                alt="Avatar" >
-                </div>
-                <div class="flip-card-back">
-                <p>
-                ${product.intro} 
-                </p> 
-                </div>
-                </div>
-                </div>
-                <div class="book-Info">
-                <h6>${product.name}</h6>
-                <h6>By ${product.author}</h6>
-                <h6>$${product.price}</h6>
-                <h6>${product.publishedDate}</h6>
-                <button class="contains-pdf">
-                <a href=${product.pdf} class="button">Read as soft copy <i
-                class="fas fa-book-reader"></i></a>
-                </button>
-                <button class="add-button" id=${product.id}>Add To Cart</button>
-                </div>
-                </article>
-                `;
+        <article class="one-book">
+        <div class="flip-card">
+        <div class="flip-card-inner">
+        <div class="flip-card-front">
+        <img src=${product.img}
+        alt="Avatar" >
+        </div>
+        <div class="flip-card-back">
+        <p>
+        ${product.intro} 
+        </p> 
+        </div>
+        </div>
+        </div>
+        <div class="book-Info">
+        <h6>${product.name}</h6>
+        <h6>By ${product.author}</h6>
+        <h6>${product.price}</h6>
+        <h6>${product.publishedDate}</h6>
+        </div>
+        <div class="button-container">
+        <button class="contains-pdf">
+        <a href=${product.pdf} class="button">Read as soft copy <i
+        class="fas fa-book-reader"></i></a>
+        </button>
+        <br>
+        <button class="add-button" id=${product.id}>Add To Cart</button>
+        </div>
+        </article>
+        `;
+
+                
 
             }
 

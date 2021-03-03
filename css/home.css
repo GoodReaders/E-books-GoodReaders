@@ -31,7 +31,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background: rgb(231, 226, 221);
+    background: rgb(214, 212, 211);
+    
     z-index: 1;
   }
   .navbar-center {
@@ -120,9 +121,9 @@
     letter-spacing: var(--mainSpacing);
   }
   .section-name {
-    font-weight: 300;
+    font-weight: 500px;
     margin: 20px 90px;
-    font-size: 1.2rem; 
+    font-size: 1.5rem; 
   }
   .products-center {
     width: 50vw;
@@ -130,7 +131,7 @@
     max-width: 1170px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-column-gap: 1.5rem;
+    grid-column-gap: 6rem;
     grid-row-gap: 1rem;
   }
   .img-container {
@@ -199,7 +200,8 @@
   .products h3 {
       margin: 10px 30px;
       color: var(--mainBlack);
-      font-weight:300;
+      font-weight: 400px;
+      font-size: 15px;
   }
 
   .products hr {
@@ -219,6 +221,7 @@
     background-color:var(--mainGrey);
     padding:0 30px;
     border-radius: 20px;
+    
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
   .quotes ul {
@@ -227,16 +230,20 @@
 
   .quotes ul li {
       margin: 30px 0px;
-      font-size: 1.1em;
-      font-family: 'Barlow Semi Condensed', sans-serif;
-      font-weight: bold;
+      font-size: 1.5em;
+      font-family: 'Lobster Two', cursive;
+
+
   }
   .quotes h3{
 
       margin:10px 0;
-      font-size:1.3em;
-      font-weight: 200;
+ 
+      font-size:1.6em;
+      font-weight: 300px;
+
       letter-spacing: var(--mainSpacing);
+
   }
  
 
@@ -544,3 +551,11 @@
   
   /* --------------- End of Cart ---------------- */
   
+    
+.navbar-center a img {
+  position: relative;
+  height: 50px;
+  width: 170px;
+  right: 30px;
+  bottom:10px;
+}
