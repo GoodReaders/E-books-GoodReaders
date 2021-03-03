@@ -1,3 +1,4 @@
+
 ( function( $ ) {
 
 	$( '.dropdown-toggle' ).click( function( e ) {
@@ -10,10 +11,4 @@
 	} );
 
 })( jQuery );
-
-
-
-
-
-
 
