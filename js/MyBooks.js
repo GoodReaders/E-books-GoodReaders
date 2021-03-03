@@ -37,6 +37,7 @@ divContainer.addEventListener('click', removeBookFromCart);
 function removeBookFromCart(event){
     event.preventDefault();
     if(event.target.nodeName ==='A'){
+        console.log('deleting node!', event.target.parentNode.parentNode);
         let bookName = event.target.parentNode.children[0].textContent; 
         event.target.parentNode.parentNode.parentNode.removeChild(event.target.parentNode.parentNode); 
         cart.removeBook(bookName);
@@ -68,6 +69,7 @@ function renderCart(){
 function loadCart(){
     const cartBooks = JSON.parse(localStorage.getItem('cart')) || [];
     cart= new Cart(cartBooks);
+    console.log('loading..', cart);
 }
 
 function clearCart() {
@@ -89,13 +91,13 @@ function showCart(){
         
         // set attributes
         divElement1.setAttribute('class', 'item');
-        imgElement.setAttribute('src', cart.books[i].bookImg);
+        imgElement.setAttribute('src', cart.books[i].img);
         divElement2.setAttribute('class', 'details');
         aElement.setAttribute('class', 'remove-btn');
 
         // set elements' content
-        h5Element.textContent = cart.books[i].bookName;
-        h6Element.textContent = '$' + cart.books[i].bookPrice;
+        h5Element.textContent = cart.books[i].name;
+        h6Element.textContent = '$' + cart.books[i].price;
         aElement.textContent = "remove";
 
         // append childs
@@ -118,8 +120,8 @@ function showCart(){
 function calcTotalPrice() {
     let total = 0;
    for(let i=0; i<cart.books.length; i++) {
-       console.log(cart.books[i].bookPrice);
-       total += cart.books[i].bookPrice;
+       console.log(cart.books[i].price);
+       total += parseFloat(cart.books[i].price) ;
    }
    return total;
 }
