@@ -42,7 +42,7 @@ Products.prototype.getandRenderProducts = async () => {
             })
            
             let result = "";
-            result = result + `<h2> ${categoriesArr[i]} <h2> `;
+            result = result + `<h4> ${categoriesArr[i]} <h4> `;
             result+=`<div class="book-grid">`
             Allnewproducts.forEach( product => {
                 result += `
