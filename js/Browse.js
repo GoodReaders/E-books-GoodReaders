@@ -9,7 +9,6 @@ let buttonsDom = [];
 function Products() {
 
 }
-
 let Allproducts = [];
 let Allnewproducts = [];
 let products;
@@ -22,8 +21,7 @@ Products.prototype.getandRenderProducts = async () => {
         products = data.books;
         productsforSaving = products[0];
         let categoriesArr = ["self-help", "cookbooks", "poetry", "fitness", "Novel", "shortStories", "science", "Art"];
-        // let mytest = products[0];
-        // console.log(categoriesArr[1]);
+       
         for (let i = 0; i < categoriesArr.length; i++) {
             Allproducts = products[0][categoriesArr[i]];
             Allnewproducts = Allproducts.map(book => {
@@ -37,15 +35,13 @@ Products.prototype.getandRenderProducts = async () => {
                 const id = parseInt(book.id) + (i * 10);
                 savedProducts.push({ img, name, author, price, publishedDate, pdf, intro, id });
                 return { img, name, author, price, publishedDate, pdf, intro, id };
-
-
             })
 
             let result = "";
             result = result + `<h4 class="category"> ${categoriesArr[i]} <h4> `;
-            result+=`<div class="book-grid">`
-            Allnewproducts.forEach( product => {
-                
+            result += `<div class="book-grid">`
+            Allnewproducts.forEach(product => {
+
                 result += `
         <article class="one-book">
         <div class="flip-card">
@@ -78,17 +74,13 @@ Products.prototype.getandRenderProducts = async () => {
         </article>
         `;
 
-                
+
 
             }
 
             )
-            // let newheading = document.createElement('h2');
-            // productDom.appendChild(newheading);
-            // newheading.innerHTML = categoriesArr[i];
+            
             result += `<div>`
-
-            // console.log(result);
             productDom.innerHTML += result;
 
         }
@@ -106,13 +98,8 @@ class Storage {
     static saveProducts() {
         localStorage.setItem("products", JSON.stringify(savedProducts));
     }
-
-
     static getStorage(id) {
-
         let retrievedspecific = JSON.parse(localStorage.getItem("products"));
-
-
         return retrievedspecific.find(product => parseInt(product.id) === parseInt(id))
     }
     static saveCart(cart) {
@@ -120,20 +107,6 @@ class Storage {
     }
 
 }
-// Products.prototype.getStorage = function(id) {
-
-
-//         console.log(retrievedProducts);
-
-// }
-
-// function getStorage(id) {
-//         let retrievedProducts = JSON.parse(localStorage.getItem("products"));
-//         console.log(retrievedProducts);
-//         return retrievedProducts.find(product => product.id === id)
-// }
-// getproducts = products.prototype.getStorage();
-// console.log(getproducts);
 
 function Cart() {
 
@@ -146,9 +119,7 @@ function Cart() {
         })
         cartTotal.innerText = tempTotal.toFixed(2);
         cartcounter.innerText = itemsTotal;
-
     }
-
 }
 
 let id;
@@ -157,7 +128,7 @@ Products.prototype.getbagButtons = () => {
     buttonsDom = buttons;
     buttons.forEach(button => {
         id = button.id;
-       
+
         let inCart = cart.find(item => item.id === id);
         if (inCart) {
             button.innerText = "In Cart";
@@ -178,12 +149,11 @@ Products.prototype.getbagButtons = () => {
             // set cart values 
             cartInstorage = new Cart
             cartInstorage.setCartValues(cart);
-           
+
         })
     })
 
 }
-
 document.addEventListener("DOMContentLoaded", function () {
     const products = new Products();
     products.getandRenderProducts().then(() => {
@@ -192,5 +162,5 @@ document.addEventListener("DOMContentLoaded", function () {
         products.getbagButtons();
     })
 })
- 
+
 
