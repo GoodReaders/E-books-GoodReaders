@@ -22,7 +22,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background: rgb(231, 226, 221);
+    background: rgb(214, 212, 211);
     z-index: 1;
   }
   .navbar-center {
@@ -346,3 +346,14 @@ img {
     color: var(--mainBlack);
 }
 }
+
+.navbar-center a img {
+    position: relative;
+    height: 70px;
+    width: 170px;
+    right: 30px;
+    bottom:10px;
+  }
+  body{
+      background-color: rgb(248, 246, 246);
+  }
