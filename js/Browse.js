@@ -16,7 +16,7 @@ let productsforSaving;
 let savedProducts = [];
 Products.prototype.getandRenderProducts = async() => {
     try {
-        let result = await fetch("books.json");
+        let result = await fetch("../../books.json");
         let data = await result.json();
         products = data.books;
         productsforSaving = products[0];
